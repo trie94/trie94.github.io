@@ -1,7 +1,7 @@
 import React from 'react';
-import './about.scss';
+import './projects.scss';
 
-class About extends React.Component{
+class Projects extends React.Component{
     constructor(props){
         super(props);
         this.state={};
@@ -9,9 +9,9 @@ class About extends React.Component{
 
     render(){
         return(
-            <div className='about'>about</div>
+            <div className='projects components'>work</div>
         )
     }
 }
 
-export default About;
+export default Projects;

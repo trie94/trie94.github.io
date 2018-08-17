@@ -2,11 +2,12 @@ import '../css/style.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import About from '../../components/about/about';
-import Projects from '../../components/projects/projects';
-import Blog from '../../components/blog/blog';
-import CV from '../../components/cv/cv';
-import Social from '../../components/social-media/social-media';
+import Header from '../components/header/header';
+import About from '../components/about/about';
+import Projects from '../components/projects/projects';
+import Blog from '../components/blog/blog';
+import CV from '../components/cv/cv';
+import Social from '../components/social-media/social-media';
 
 
 if (process.env.NODE_ENV !== 'production') { console.log("dev mode"); }
@@ -32,6 +33,7 @@ class Root extends React.Component{
     render(){
         return(
             <div id="app">
+            <Header />
             <About />
             <Projects />
             <Blog />

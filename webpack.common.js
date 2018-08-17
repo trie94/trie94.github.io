@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: ['./src/js/index.js'],
@@ -28,14 +27,6 @@ module.exports = {
             }
         },
         {
-            test: /\.css$/,
-            use: [
-                'css-hot-loader',
-                MiniCssExtractPlugin.loader,
-                'css-loader'
-            ],
-        },
-        {
             test: /\.scss$/,
             use: [
                     "style-loader",
@@ -44,7 +35,7 @@ module.exports = {
             ]
         },
         {
-            test: /\.(png|jpg|gif)$/,
+            test: /\.(png|jpg|gif|pdf)$/,
             use: [
                 {
                     loader: 'file-loader',
@@ -62,10 +53,6 @@ module.exports = {
             title: 'Production',
             template: './src/html/index.html',
             filename: 'index.html'
-        }),
-        new MiniCssExtractPlugin({
-            title: 'Production',
-            chunkFilename: '[id].css'
         }),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()

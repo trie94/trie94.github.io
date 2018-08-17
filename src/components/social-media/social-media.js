@@ -9,7 +9,7 @@ class Social extends React.Component{
 
     render(){
         return(
-            <div className='social-media'>social media</div>
+            <div className='social-media components'>social media</div>
         )
     }
 }
