@@ -13,7 +13,7 @@ class About extends React.Component {
         return (
             <div className='about components'>
                 <div className='interaction'>
-                    some stuff
+                    some aafdsfdadf
                 </div>
                 <div className='description'>
                     {this.content}
