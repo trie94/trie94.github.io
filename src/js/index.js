@@ -1,14 +1,11 @@
 import '../css/style.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-import Header from '../components/header/header';
-import About from '../components/about/about';
-import Projects from '../components/projects/projects';
-import Blog from '../components/blog/blog';
-import CV from '../components/cv/cv';
-import Social from '../components/social-media/social-media';
-
+import Home from '../pages/home/home';
+import ARVRDev from '../pages/ar-vr-dev/ar-vr-dev';
+import WebDev from '../pages/web-dev/web-dev';
 
 if (process.env.NODE_ENV !== 'production') { console.log("dev mode"); }
 
@@ -24,27 +21,29 @@ if (module.hot) {
     enableProdMode();
 }
 
-class Root extends React.Component{
-    constructor(props){
+class Root extends React.Component {
+    constructor(props) {
         super(props);
-        this.state={}
+        this.state = {}
     }
 
-    render(){
-        return(
-            <div id="app">
-            <Header />
-            <About />
-            <Projects />
-            <Blog />
-            <CV />
-            <Social />
+    render() {
+        return (
+            <div>
+                <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route path='/ar-vr-dev' component={ARVRDev} />
+                    <Route path='/web-dev' component={WebDev} />
+                    <Redirect to='/' />
+                </Switch>
             </div>
         )
     }
 }
 
 ReactDOM.render(
-    <Root />,
+    <BrowserRouter>
+    <Root />
+    </BrowserRouter>,
     document.getElementById('root')
 );
