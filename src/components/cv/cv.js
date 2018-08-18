@@ -9,8 +9,8 @@ class CV extends React.Component {
 
         this.buttonStyle = {
             // margin: "20px 15px",
-            width: 160,
-            height: 60,
+            width: window.innerWidth,
+            height: "100px",
             color: "#000",
             fontSize: "16px",
             borderColor: "#000",
@@ -34,7 +34,7 @@ class CV extends React.Component {
 
     render() {
         return (
-            <div className='cv components'>
+            <div className='cv components row'>
                 <button className="download" href={resume}
                     style={this.buttonStyle} onClick={this.downloadResume}>
                     Download CV

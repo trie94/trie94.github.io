@@ -9,7 +9,14 @@ class Projects extends React.Component{
 
     render(){
         return(
-            <div className='projects components'>work</div>
+            <div className='projects components row'>
+            <div className='dev1'>
+            AR/VR Dev
+            </div>
+            <div className='dev2'>
+            Web Dev
+            </div>
+            </div>
         )
     }
 }

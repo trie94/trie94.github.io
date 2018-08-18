@@ -9,7 +9,17 @@ class Blog extends React.Component{
 
     render(){
         return(
-            <div className='blog components'>blog</div>
+            <div className='blog components row'>
+            <div className='blog1'>
+            Coding Sketches
+            </div>
+            <div className='blog2'>
+            UX Design
+            </div>
+            <div className='blog3'>
+            Drawings
+            </div>
+            </div>
         )
     }
 }
