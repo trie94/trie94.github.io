@@ -16,30 +16,17 @@ class CV extends React.Component {
             borderColor: "#000",
             borderWidth: "2px"
         }
-
-        this.downloadResume = this.downloadResume.bind(this);
-    }
-
-    downloadResume() {
-        if (this.state.isClicked === false) {
-            this.setState({ isClicked: true });
-            console.log(this.state.isClicked);
-        }
-        window.open(resume);
-    }
-
-    componentDidUpdate() {
-        console.log("did update");
+        this.style = { color: "#fff" }
     }
 
     render() {
         return (
-            <div className='cv components row'>
-                <button className="download" href={resume}
-                    style={this.buttonStyle} onClick={this.downloadResume}>
-                    Download CV
-                </button>
-            </div>
+            <a href={resume} target="_blank" style={this.style}>
+                <div className='cv components row'>
+                    <button className="download" style={this.buttonStyle} >
+                        Download CV </button>
+                </div>
+            </a>
         )
     }
 }
