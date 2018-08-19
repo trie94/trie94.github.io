@@ -7,31 +7,25 @@ body {
     font-weight: 300;
 }
 
-#app {
-    display: flex;
-    flex-direction: column;
-}
-
-.components {
-    padding: 5%;
-}
-
-.title {
-    font-weight: 600 !important;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 5%;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .dev1,
     .dev2, 
     .blog1,
     .blog2,
     .blog3 {
         width: 100% !important
+    }
+}
+
+@media (min-resolution: 289dpi){
+    body{
+        background-color: red !important;
     }
 }

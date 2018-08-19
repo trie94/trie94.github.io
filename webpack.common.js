@@ -53,7 +53,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Production',
             template: './pages/root/root.html',
-            filename: 'root.html'
+            filename: 'index.html'
         }),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()

@@ -1,0 +1,29 @@
+.header{
+    border: 1px black dashed;
+    padding: 3%;
+    align-items: center;
+}
+
+.title,
+.logo,
+.menu {
+    width: 20%;
+    font-weight: 600 !important;
+    border: 1px red dashed;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.logo-img {
+    min-width: 70px;
+    max-width: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+    .title,
+    .logo,
+    .menu  {
+        width: 100% !important;
+        margin: 5px !important;
+    }
+}
