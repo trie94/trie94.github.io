@@ -1,6 +1,8 @@
 import React from 'react';
 import './web-dev.scss';
 
+import Header from '../../common/header/header';
+
 class WebDev extends React.Component {
     constructor(props) {
         super(props);
@@ -9,8 +11,11 @@ class WebDev extends React.Component {
 
     render() {
         return (
-            <div className='web-dev components'>
-            web-dev
+            <div>
+                <Header title="Web Dev" link="/web-dev" />
+                <div className='web-dev components'>
+                    web-dev
+                </div>
             </div>
         )
     }

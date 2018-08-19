@@ -27,10 +27,10 @@ class Social extends React.Component{
 class Icon extends React.Component{
     constructor(props){
         super(props);
-        this.state={ isHovering: false};
+        this.state={ isHovering: false };
         this.doSpin = this.doSpin.bind(this);
         this.stopSpin = this.stopSpin.bind(this);
-        this.style = { color: "#fff"}
+        this.style = { color: "#fff" }
     }
     doSpin(){
         this.setState({isHovering:true});

@@ -17,7 +17,7 @@ class Header extends React.Component {
     render() {
         return (
             <div className='header row'>
-                <div className='logo'><img className='logo-img' src={logo}></img></div>
+                <div className='logo'><Link to="/"><img className='logo-img' src={logo}></img></Link></div>
                 <div className='title'><Link to={this.state.link}>{this.state.title}</Link></div>
                 <Menu />
             </div>
