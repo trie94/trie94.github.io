@@ -1,6 +1,6 @@
 import React from 'react';
 import './cv.scss';
-import resume from '../../../assets/pdfs/resume.pdf';
+import resume from '../../../../assets/pdfs/resume.pdf';
 
 class CV extends React.Component {
     constructor(props) {

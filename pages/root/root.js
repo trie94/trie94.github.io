@@ -1,11 +1,11 @@
-import '../css/style.scss';
+import './root.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-import Home from '../pages/home/home';
-import ARVRDev from '../pages/ar-vr-dev/ar-vr-dev';
-import WebDev from '../pages/web-dev/web-dev';
+import Index from '../index/index';
+import ARVRDev from '../ar-vr-dev/ar-vr-dev';
+import WebDev from '../web-dev/web-dev';
 
 if (process.env.NODE_ENV !== 'production') { console.log("dev mode"); }
 
@@ -31,7 +31,7 @@ class Root extends React.Component {
         return (
             <div>
                 <Switch>
-                    <Route exact path='/' component={Home} />
+                    <Route exact path='/' component={Index} />
                     <Route path='/ar-vr-dev' component={ARVRDev} />
                     <Route path='/web-dev' component={WebDev} />
                     <Redirect to='/' />

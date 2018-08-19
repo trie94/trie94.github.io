@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: ['./src/js/index.js'],
+    entry: ['./pages/root/root.js'],
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, './dist'),
@@ -52,8 +52,8 @@ module.exports = {
         new CleanWebpackPlugin(['dist/*']),
         new HtmlWebpackPlugin({
             title: 'Production',
-            template: './src/html/index.html',
-            filename: 'index.html'
+            template: './pages/root/root.html',
+            filename: 'root.html'
         }),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()

@@ -1,9 +1,6 @@
 import React from 'react';
 import './projects.scss';
 import { Link } from "react-router-dom";
-import ARVRDev from '../../pages/ar-vr-dev/ar-vr-dev';
-import WebDev from '../../pages/web-dev/web-dev';
-
 
 class Projects extends React.Component {
     constructor(props) {
