@@ -11,8 +11,12 @@ class Projects extends React.Component {
     render() {
         return (
             <div className='projects row'>
-                <div className='dev1'><Link to="/ar-vr-dev">AR/VR Dev</Link></div>
-                <div className='dev2'><Link to="/web-dev">web Dev</Link></div>
+                <div className='dev1'>
+                <Link to="/ar-vr-dev">AR/VR Dev</Link>
+                </div>
+                <div className='dev2'>
+                <Link to="/web-dev">web Dev</Link>
+                </div>
             </div>
         );
     }

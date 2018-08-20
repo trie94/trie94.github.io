@@ -14,7 +14,7 @@ class WebDev extends React.Component {
             <div>
                 <Header title="Web Dev" link="/web-dev" />
                 <div className='web-dev components'>
-                    web-dev
+                web-dev
                 </div>
             </div>
         )
