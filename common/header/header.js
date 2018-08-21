@@ -16,10 +16,9 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div className='header row'>
+            <div className='header'>
                 <div className='logo'><Link to="/"><img className='logo-img' src={logo}></img></Link></div>
                 <div className='title'><NavLink to={this.state.link}>{this.state.title}</NavLink></div>
-                <Menu />
             </div>
         )
     }

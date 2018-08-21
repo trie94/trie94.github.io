@@ -8,6 +8,8 @@ import ARVRDev from '../ar-vr-dev/ar-vr-dev';
 import WebDev from '../web-dev/web-dev';
 import { createHashHistory } from 'history'
 
+import Menu from '../../common/components/menu/menu';
+
 if (process.env.NODE_ENV !== 'production') { console.log("dev mode"); }
 
 if (module.hot) {
@@ -34,16 +36,12 @@ class Root extends React.Component {
     }
 
     render() {
-        console.log(history.location.pathname);
-
         return (
-            <div>
-                <Switch>
-                    <Route exact path='/' component={Index} />
-                    <Route path='/ar-vr-dev' component={ARVRDev} />
-                    <Route path='/web-dev' component={WebDev} />
-                </Switch>
-            </div>
+            <Switch>
+                <Route exact path='/' component={Index} />
+                <Route path='/ar-vr-dev' component={ARVRDev} />
+                <Route path='/web-dev' component={WebDev} />
+            </Switch>
         )
     }
 }

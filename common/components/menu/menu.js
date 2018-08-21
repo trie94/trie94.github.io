@@ -1,42 +1,43 @@
 import React from 'react';
 import './hamburgers/hamburgers.scss';
+import './menu.scss';
+import { fallDown as Stack } from 'react-burger-menu'
 
 class Menu extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { 
+        this.state = {
             isClicked: false,
-            isActive: "hamburger--emphatic is-active",
-            isCollapsed: "hamburger--emphatic",
-            buttonState: "hamburger--emphatic"
+            isActive: "menu-button hamburger--emphatic is-active",
+            isCollapsed: "menu-button hamburger--emphatic",
+            buttonState: "menu-button hamburger--emphatic",
+            menuback: "menu-back"
         }
         this.onClick = this.onClick.bind(this);
         this.style = { outline: "none" }
     }
 
-    onClick(){
-        this.setState({isClicked: !this.state.isClicked});
+    onClick() {
+        this.setState({ isClicked: !this.state.isClicked });
 
-        if (this.state.isClicked){
-            this.setState({buttonState: this.state.isActive});
+        if (this.state.isClicked) {
+            this.setState({
+                buttonState: this.state.isActive,
+                menuback: "menu-back-appear"
+            });
         } else {
-            this.setState({buttonState: this.state.isCollapsed});
+            this.setState({
+                buttonState: this.state.isCollapsed,
+                menuback: "menu-back"
+            });
         }
     }
 
     render() {
         return (
-            <div className='menu'>
-                <div onClick={this.onClick} style={this.style} className={this.state.buttonState} tabIndex="0"
-                    aria-label="Menu" role="button" aria-controls="navigation">
-                    <div className="hamburger-box">
-                        <div className="hamburger-inner"></div>
-                    </div>
-                </div>
-                <nav id="navigation">
-                    menu
-                </nav>
-            </div>
+            <Stack component="div" isOpen={this.state.isClicked}>
+                <a id="home" className="bm-item-list" href="/">Home</a>
+            </Stack>
         )
     }
 }
