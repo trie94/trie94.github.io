@@ -3,7 +3,7 @@ import './header.scss';
 import { Link, NavLink } from "react-router-dom";
 
 import logo from '../../assets/imgs/logo.png';
-import Menu from '../../common/components/menu/menu';
+import Menu from '../components/menu/menu';
 
 class Header extends React.Component {
     constructor(props) {
@@ -16,9 +16,11 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div className='header'>
-                <div className='logo'><Link to="/"><img className='logo-img' src={logo}></img></Link></div>
-                <div className='title'><NavLink to={this.state.link}>{this.state.title}</NavLink></div>
+            <div className='header row'>
+                <div className='logo'><Link to="/">
+                    <img className='logo-img' src={logo}></img>
+                </Link></div>
+                <Menu />
             </div>
         )
     }

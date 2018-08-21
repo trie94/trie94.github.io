@@ -8,8 +8,6 @@ import ARVRDev from '../ar-vr-dev/ar-vr-dev';
 import WebDev from '../web-dev/web-dev';
 import { createHashHistory } from 'history'
 
-import Menu from '../../common/components/menu/menu';
-
 if (process.env.NODE_ENV !== 'production') { console.log("dev mode"); }
 
 if (module.hot) {

@@ -10,7 +10,6 @@ module.exports = merge(common, {
         watchContentBase: true,
         hot: true,
         open: true,
-        port: 9000,
-        historyApiFallback: true
+        port: 9000
     }
 });

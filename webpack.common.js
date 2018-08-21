@@ -8,8 +8,7 @@ module.exports = {
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, './dist'),
-        chunkFilename: 'chunks/[id].[chunkhash].js',
-        publicPath: '/'
+        chunkFilename: 'chunks/[id].[chunkhash].js'
     },
 
     module: {
@@ -36,7 +35,7 @@ module.exports = {
             ]
         },
         {
-            test: /\.(png|jpg|gif|pdf)$/,
+            test: /\.(png|jpg|gif|pdf|ico)$/,
             use: [
                 {
                     loader: 'file-loader',
@@ -53,7 +52,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Production',
             template: './pages/root/root.html',
-            filename: 'index.html'
+            filename: 'index.html',
+            favicon: './assets/imgs/favicon.ico'
         }),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()

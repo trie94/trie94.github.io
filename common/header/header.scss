@@ -1,28 +1,30 @@
 .header{
     border: 1px black dashed;
     padding: 3%;
+    height: 75px;
 }
 
-.title,
-.logo,
-.menu {
-    width: 40%;
+.title {
     font-weight: 600 !important;
-    border: 1px red dashed;
     text-align: center;
     margin: auto;
     overflow: visible;
 }
 
 .logo-img {
-    min-width: 70px;
-    max-width: 100px;
+    display: block;
+    margin: auto;
+    min-height: 50px;
+    max-height: 75px;
 }
 
 @media only screen and (max-width: 768px) {
     .title,
-    .logo,
-    .menu  {
+    .logo {
         width: 100% !important;
+    }
+
+    .header {
+        height: auto;
     }
 }
