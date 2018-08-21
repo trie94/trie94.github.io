@@ -23,8 +23,8 @@ class Menu extends React.Component {
         return (
             <div className="menu-list">
                 <div className="menu-item"><a href="/">HOME</a></div>
-                <div className="menu-item"><a href="/">WORK</a></div>
-                <div className="menu-item"><a href="/">SMALL STUFF</a></div>
+                <div className="menu-item"><a href="/#work">WORK</a></div>
+                <div className="menu-item"><a href="/small-stuff">SMALL STUFF</a></div>
                 <div className="menu-item"><a href={resume} target="_blank">CV</a></div>
             </div>
         )

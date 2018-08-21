@@ -1,7 +1,7 @@
 import './root.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Router, HashRouter, BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Index from '../index/index';
 import ARVRDev from '../ar-vr-dev/ar-vr-dev';
@@ -24,7 +24,7 @@ if (module.hot) {
 
 const history = createHashHistory({
     basname: '',
-    hashType: 'slash'
+    hashType: 'noslash'
   });
 
 class Root extends React.Component {
@@ -39,14 +39,15 @@ class Root extends React.Component {
                 <Route exact path='/' component={Index} />
                 <Route path='/ar-vr-dev' component={ARVRDev} />
                 <Route path='/web-dev' component={WebDev} />
+                <Redirect to='/' />
             </Switch>
         )
     }
 }
 
 ReactDOM.render(
-    <Router history={history}>
+    <BrowserRouter>
         <Root />
-    </Router>,
+    </BrowserRouter>,
     document.getElementById('root')
 );
