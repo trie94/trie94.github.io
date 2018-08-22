@@ -1,14 +1,36 @@
 .about{
     border: 1px black solid;
     justify-content: center;
-    // align-content: center;
 }
 
 .interaction{
-    border: 2px red dashed;
+    border: 2px gray dashed;
     margin-bottom: 20px;
+    display: block;
+    position: relative;
 }
 
 .description{
     text-align: center;
+}
+
+.door-img {
+    display: block;
+    width: 55%;
+    min-width: 250px;
+    margin: auto;
+}
+
+.switch-img {
+    display: block;
+    position: absolute;
+    width: 50px;
+    right: 10%;
+    top: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+    .switch-img {
+        width: 40px !important;
+    }
 }
