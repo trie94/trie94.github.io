@@ -1,6 +1,5 @@
 .blog{
     border: 1px black solid;
-    align-items: center;
 }
 
 .blog1,
@@ -11,4 +10,9 @@
     height: 10%;
     min-height: 100px;
     margin: 10px;
+}
+
+#small-stuff {
+    margin: 20px auto 0 auto;
+    text-align: center;
 }

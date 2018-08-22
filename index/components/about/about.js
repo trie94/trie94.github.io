@@ -13,7 +13,7 @@ class About extends React.Component {
         return (
             <div className='about row'>
                 <div className='interaction'>
-                    img
+                    img-test: router
                 </div>
                 <div className='description'>
                     {this.content}

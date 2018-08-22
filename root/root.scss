@@ -24,3 +24,20 @@ body {
         width: 100% !important;
     }
 }
+
+a:link {
+    color: gray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: #000;
+}

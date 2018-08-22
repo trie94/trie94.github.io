@@ -2,11 +2,36 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const glob = require('glob');
+
+console.log('globbing');
+let files = glob.sync('./pages/**/index.js');
+files = files.map(function(file) {
+    let name = file;
+    name = name.replace('/index.js', '');
+    name = name.replace('./pages/', '');
+    name = name + '/index.html';
+    return name;
+});
+files.push('index.html');
+
+const htmlPlugins = files.map(function(file) {
+    return new HtmlWebpackPlugin({
+        title: 'Production',
+        template: './root/root.html',
+        filename: file,
+        favicon: './assets/imgs/favicon.ico'
+    })
+})
+
+for (var i = 0; i < files.length; i++) {
+    console.log(files[i]);
+}
 
 module.exports = {
-    entry: ['./pages/root/root.js'],
+    entry: ['./root/root.js'],
     output: {
-        filename: '[name].bundle.js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, './dist'),
         chunkFilename: 'chunks/[id].[chunkhash].js',
         publicPath: '/'
@@ -50,13 +75,13 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(['dist/*']),
-        new HtmlWebpackPlugin({
-            title: 'Production',
-            template: './pages/root/root.html',
-            filename: 'index.html',
-            favicon: './assets/imgs/favicon.ico'
-        }),
+        // new HtmlWebpackPlugin({
+        //     title: 'Production',
+        //     template: './root/root.html',
+        //     filename: 'index.html',
+        //     favicon: './assets/imgs/favicon.ico'
+        // }),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
-    ]
+    ].concat(htmlPlugins)
 }
