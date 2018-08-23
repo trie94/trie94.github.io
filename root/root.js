@@ -5,8 +5,9 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Index from '../index';
 import Works from '../pages/works';
-import ARVRDev from '../pages/ar-vr-dev';
-import WebDev from '../pages/web-dev';
+import Brick from '../pages/brick';
+import Tilt from '../pages/tilt';
+import Frankenstein from '../pages/frankenstein';
 
 if (process.env.NODE_ENV !== 'production') { console.log("dev mode"); }
 
@@ -33,8 +34,9 @@ class Root extends React.Component {
             <Switch>
                 <Route exact path='/' component={Index} />
                 <Route path ='/works' component={Works} />
-                <Route path='/ar-vr-dev' component={ARVRDev} />
-                <Route path='/web-dev' component={WebDev} />
+                <Route path='/brick' component={Brick} />
+                <Route path='/tilt' component={Tilt} />
+                <Route path='/frankenstein' component={Frankenstein} />
                 <Redirect to='/' />
             </Switch>
         )

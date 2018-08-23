@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import border from '../../../assets/imgs/border.png';
 import arrow from '../../../assets/imgs/arrow.png';
 
+import brick_thumb from '../../../assets/imgs/thumbnails/brick_thumb.png';
+import tilt_thumb from '../../../assets/imgs/thumbnails/tilt_thumb.png';
+import frankenstein_thumb from '../../../assets/imgs/thumbnails/frankenstein_thumb.png';
+
 class Work extends React.Component {
     constructor(props) {
         super(props);
@@ -13,14 +17,17 @@ class Work extends React.Component {
 
     render() {
         return (
-            <div className='projects'>
+            <div className='work'>
                 <div id="work">WORK</div>
                 <div className="row">
                     <div className='dev1'>
-                        <Link to="/ar-vr-dev" >AR/VR DEV</Link>
+                        <Link to="/brick" ><img className="thumb-img" src={brick_thumb}/></Link>
                     </div>
                     <div className='dev2'>
-                        <Link to="/web-dev">WEB DEV</Link>
+                        <Link to="/tilt"><img className="thumb-img" src={tilt_thumb}/></Link>
+                    </div>
+                    <div className='dev3'>
+                        <Link to="/frankenstein"><img className="thumb-img" src={frankenstein_thumb}/></Link>
                     </div>
                     <div className="readmore"><p className="see-more"><Link to="/works">SEE MORE</Link></p>
                     <Link to="/works"><img className="arrow" src={arrow} ></img></Link>

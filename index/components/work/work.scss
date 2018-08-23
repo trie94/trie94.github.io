@@ -1,14 +1,31 @@
-.projects{
+.work{
     margin: auto;
 }
 
+@mixin size($width) {
+    width: $width;
+    padding-top: $width;
+    position: relative;
+}
+
 .dev1,
-.dev2 {
+.dev2,
+.dev3 {
     border: 2px gray dashed;
-    width: 45%;
     margin: 10px;
-    height: 50%;
-    min-height: 300px;
+    width: 30%;
+    padding: 30% 0 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .dev1,
+    .dev2,
+    .dev3 {
+        width: 100% !important;
+        padding: 100% 0 0 0 !important;
+    }
 }
 
 #work {
@@ -35,9 +52,12 @@
     margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
-    .dev1,
-    .dev2 {
-        width: 100% !important;
-    }
+.thumb-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 110%;
+    margin: auto;
+    display: block;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import './ar-vr-dev.scss';
+import './brick.scss';
 import Header from '../../common/header/header';
 
-class ARVRDev extends React.Component {
+class Brick extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -12,13 +12,13 @@ class ARVRDev extends React.Component {
 
         return (
             <div>
-                <Header title="AR/ VR Dev" link="/ar-vr-dev" />
-                <div className='ar-vr-dev'>
-                ar-vr-dev
+                <Header title="BRICK" link="/brick" />
+                <div className='brick'>
+                brick
                 </div>
             </div>
         )
     }
 }
 
-export default ARVRDev;
+export default Brick;
