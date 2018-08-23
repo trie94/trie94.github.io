@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../common/header/header';
 import About from './components/about/about';
-import Projects from './components/projects/projects';
+import Work from './components/work/work';
 import Blog from './components/blog/blog';
 import CV from './components/cv/cv';
 import Social from './components/social-media/social-media';
@@ -18,7 +18,7 @@ class Index extends React.Component{
             <div className="index">
             <Header title="Yein Jo" link="/"/>
             <About />
-            <Projects />
+            <Work />
             <Blog />
             <CV />
             <Social />

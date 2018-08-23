@@ -10,22 +10,8 @@
     text-decoration: none;
 }
 
-@media only screen and (min-width: 350px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .menu-list {
         margin: auto !important;
-    }
-
-    .menu-item {
-        font-size: 12px !important;
-    }
-}
-
-@media only screen and (max-width: 350px){
-    .menu-list {
-        margin: auto !important;
-    }
-    
-    .menu-item {
-        font-size: 8px !important;
     }
 }

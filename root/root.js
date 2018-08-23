@@ -1,13 +1,12 @@
 import './root.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, HashRouter, BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-// import { browserHistory, Router, Route, IndexRedirect } from 'react-router';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Index from '../index';
+import Works from '../pages/works';
 import ARVRDev from '../pages/ar-vr-dev';
 import WebDev from '../pages/web-dev';
-import { createHashHistory } from 'history';
 
 if (process.env.NODE_ENV !== 'production') { console.log("dev mode"); }
 
@@ -23,15 +22,6 @@ if (module.hot) {
     enableProdMode();
 }
 
-// const history = createHashHistory({
-//     basname: '',
-//     hashType: 'noslash'
-// });
-
-function scrollTop() {
-    window.scrollTo(0, 0)
-}
-
 class Root extends React.Component {
     constructor(props) {
         super(props);
@@ -40,13 +30,9 @@ class Root extends React.Component {
 
     render() {
         return (
-            // <Router history={browserHistory} onUpdate={scrollTop}>
-            //     <Route path="/" component={Index} />
-            //     <Route path='/ar-vr-dev' component={ARVRDev} />
-            //     <Route path='/web-dev' component={WebDev} />
-            // </Router>
             <Switch>
                 <Route exact path='/' component={Index} />
+                <Route path ='/works' component={Works} />
                 <Route path='/ar-vr-dev' component={ARVRDev} />
                 <Route path='/web-dev' component={WebDev} />
                 <Redirect to='/' />
