@@ -5,12 +5,27 @@
 }
 
 .menu-item {
-    margin: 10px 18px;
+    text-align: center;
+    margin: 10px 20px;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 350px) and (max-width: 768px) {
     .menu-list {
-        width: 100% !important;
+        margin: auto !important;
+    }
+
+    .menu-item {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .menu-list {
+        margin: auto !important;
+    }
+    
+    .menu-item {
+        font-size: 8px !important;
     }
 }

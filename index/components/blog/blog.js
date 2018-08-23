@@ -1,5 +1,6 @@
 import React from 'react';
 import './blog.scss';
+import border from '../../../assets/imgs/border.png';
 
 class Blog extends React.Component {
     constructor(props) {
@@ -21,6 +22,7 @@ class Blog extends React.Component {
                     <div className='blog3'>
                         Drawings
                     </div>
+                    <img className="row-line" src={border}/>
                 </div>
             </div>
         )

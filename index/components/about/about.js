@@ -4,13 +4,14 @@ import about_content from './about.json';
 
 import door from '../../../assets/imgs/door.png';
 import light from '../../../assets/imgs/light-switch.png';
+import border from '../../../assets/imgs/border.png';
 
 class About extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             isLightOn: true,
-            backgroundColor: "rgb(1,1,1,0.0)" };
+            backgroundColor: "transparent" };
 
         this.content = about_content.intro;
 
@@ -20,7 +21,7 @@ class About extends React.Component {
 
     lightHandler(){
         this.setState({ isLightOn: !this.state.isLightOn }, ()=>
-            this.setState({ backgroundColor: this.state.isLightOn ? "#fff" : "rgb(0,0,0,0.9)" }));
+            this.setState({ backgroundColor: this.state.isLightOn ? "transparent" : "rgb(0,0,0,0.9)" }));
     }
 
     render() {
@@ -31,9 +32,10 @@ class About extends React.Component {
                     <img className="switch-img" src={light} onClick={this.lightHandler}/>
                     <img className="door-img" src={door}/>
                 </div>
-                <div className='description'>
+                {/* <div className='description'>
                     {this.content}
-                </div>
+                </div> */}
+                <img className="row-line" src={border}/>
             </div>
         )
     }

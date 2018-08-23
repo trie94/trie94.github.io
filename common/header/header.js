@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import logo from '../../assets/imgs/logo.png';
 import Menu from '../components/menu/menu';
+import border from '../../assets/imgs/border.png';
 
 class Header extends React.Component {
     constructor(props) {
@@ -21,6 +22,7 @@ class Header extends React.Component {
                     <img className='logo-img' src={logo}></img>
                 </Link></div>
                 <Menu />
+                <img className="row-line" src={border}/>
             </div>
         )
     }
