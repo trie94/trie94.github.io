@@ -22,16 +22,16 @@ class Work extends React.Component {
                 <div id="work">WORK</div>
                 <div className="row">
                     <div className='dev1'>
-                        <img className="thumb-frame" src={thumb_frame} />
-                        <Link to="/brick" ><img className="thumb-img" src={brick_thumb} /></Link>
+                        <Link to="/brick" ><img className="thumb-frame" src={thumb_frame} />
+                        <img className="thumb-img" src={brick_thumb} /></Link>
                     </div>
                     <div className='dev2'>
-                        <img className="thumb-frame" src={thumb_frame} />
-                        <Link to="/tilt"><img className="thumb-img" src={tilt_thumb} /></Link>
+                        <Link to="/tilt"><img className="thumb-frame" src={thumb_frame} />
+                        <img className="thumb-img" src={tilt_thumb} /></Link>
                     </div>
                     <div className='dev3'>
-                        <img className="thumb-frame" src={thumb_frame} />
-                        <Link to="/frankenstein"><img className="thumb-img" src={frankenstein_thumb} /></Link>
+                        <Link to="/frankenstein"><img className="thumb-frame" src={thumb_frame} />
+                        <img className="thumb-img" src={frankenstein_thumb} /></Link>
                     </div>
                     <div className="readmore"><p className="see-more"><Link to="/works">SEE MORE</Link></p>
                         <Link to="/works"><img className="arrow" src={arrow} ></img></Link>
