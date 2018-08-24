@@ -23,15 +23,15 @@ class Work extends React.Component {
                 <div className="row">
                     <div className='dev1'>
                         <Link to="/brick" ><img className="thumb-frame" src={thumb_frame} />
-                        <img className="thumb-img" src={brick_thumb} /></Link>
+                        <img className="thumb-img" src={brick_thumb} /><div className="overlay">this is title</div></Link>
                     </div>
                     <div className='dev2'>
                         <Link to="/tilt"><img className="thumb-frame" src={thumb_frame} />
-                        <img className="thumb-img" src={tilt_thumb} /></Link>
+                        <img className="thumb-img" src={tilt_thumb} /><div className="overlay">this is title</div></Link>
                     </div>
                     <div className='dev3'>
                         <Link to="/frankenstein"><img className="thumb-frame" src={thumb_frame} />
-                        <img className="thumb-img" src={frankenstein_thumb} /></Link>
+                        <img className="thumb-img" src={frankenstein_thumb} /><div className="overlay">this is title</div></Link>
                     </div>
                     <div className="readmore"><p className="see-more"><Link to="/works">SEE MORE</Link></p>
                         <Link to="/works"><img className="arrow" src={arrow} ></img></Link>
