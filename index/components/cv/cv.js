@@ -1,6 +1,7 @@
 import React from 'react';
 import './cv.scss';
 import resume from '../../../assets/pdfs/resume.pdf';
+import border from '../../../assets/imgs/border.png';
 
 class CV extends React.Component {
     constructor(props) {
@@ -25,6 +26,7 @@ class CV extends React.Component {
                 <div className='cv components row'>
                     <button className="download" style={this.buttonStyle} >
                         Download CV </button>
+                <img className="row-line" src={border}/>
                 </div>
             </a>
         )

@@ -30,7 +30,7 @@ class Icon extends React.Component{
         this.state={ isHovering: false };
         this.doSpin = this.doSpin.bind(this);
         this.stopSpin = this.stopSpin.bind(this);
-        this.style = { color: "#fff" }
+        this.style = { color: "#000" }
     }
     doSpin(){
         this.setState({isHovering:true});
