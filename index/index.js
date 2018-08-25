@@ -20,7 +20,7 @@ class Index extends React.Component{
             <About />
             <Work />
             <Blog />
-            <CV />
+            {/* <CV /> */}
             <Social />
             </div>
         )

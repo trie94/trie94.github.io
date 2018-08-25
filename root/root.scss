@@ -19,14 +19,6 @@ body {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 768px) {
-    .blog1,
-    .blog2,
-    .blog3{
-        width: 100% !important;
-    }
-}
-
 a:link {
     color: gray;
     text-decoration: none;

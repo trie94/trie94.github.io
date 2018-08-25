@@ -2,8 +2,8 @@ import React from 'react';
 import './social-media.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 class Social extends React.Component{
@@ -14,9 +14,9 @@ class Social extends React.Component{
 
     render(){
         return(
-            <div className='social-media row'>
+            <div className='row'>
             <Icon icon={faGithubAlt} link="https://github.com/trie94"/>
-            <Icon icon={faInstagram} link="https://www.instagram.com/crushed157/" />
+            <Icon icon={faLinkedin} link="https://www.linkedin.com/in/yein-jo/" />
             <Icon icon={faTwitter} link="https://twitter.com/157crush"/>
             <Icon icon={faEnvelope} link="mailto:yeinj@andrew.cmu.edu"/>
             </div>
