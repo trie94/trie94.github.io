@@ -1,3 +1,29 @@
-.ar-vr-dev {
-    background: blue;
+.work-content {
+    // border: 2px gray dashed;
+    padding: 5% 15%;
+}
+
+.work-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 50%;
+    max-height: 50%;
+    margin: 5% 0;
+}
+
+.work-video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, 0%);
+}
+
+.work-summary {
+    margin: 5% 0;
 }
