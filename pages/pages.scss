@@ -1,12 +1,14 @@
-.work-content {
+.work-content,
+.main-content {
     // border: 2px gray dashed;
-    padding: 5% 20%;
+    padding: 2% 22% 0 22%;
     position: relative;
 }
 
 @media only screen and (max-width: 768px) {
-    .work-content {
-        padding: 5% 10% !important;
+    .work-content,
+    .main-content {
+        padding: 2% 10% 0 10% !important;
     }
 
     .bullet-wrapper {
@@ -37,21 +39,34 @@
 
 .work-summary {
     margin: 5% 0;
-    // position: relative;
+    font-size: 18px;
+    letter-spacing: .3px;
 }
 
 .bullet-wrapper {
     display: flex;
     flex-wrap: wrap;
     margin: 5%;
-    // position: relative;
+    justify-content: space-between;
 }
 
 .bullets {
     margin: 0 20px;
+    white-space: nowrap;
 }
 
 .bullet-titles {
     font-weight: bold;
     color: rgba(0,0,0,0.5);
+}
+
+.sub-titles {
+    font-size: 21px;
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    margin: 1% 0;
+}
+
+.section-wrappers{
+    padding-bottom: 5%;
 }

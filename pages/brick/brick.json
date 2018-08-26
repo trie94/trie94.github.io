@@ -6,5 +6,9 @@
     "duration": "15 weeks",
     "role": "Programmer",
     "platform": "Google AR Core",
-    "tool": "Unity"
+    "tool": "Unity",
+    "section1": "Brick has a simple game mechanic where players grab a block that is floating around in a virtual space and match it to the grid that has the same color.",
+    "section2": "Two players are assigned two different colors and they can only interact with their colors. Assigned colors are shown on the right top of the screen.",
+    "section3": "When two players successfully join the game, AR Core spawns a grid wall at the center of the detected plane. Once the wall is spawned, the count down starts and the players should match all the blocks within the limited amount of time. They can check the remain time on the left top of the screen.",
+    "section4": "In order to grab a block, a player should get close to it until the block glows and shivers. The player can grab the block by tapping and holding the screen. When the player brings the block to the grid with the same color, the grid behaves the same — glowing and shivering. That is the time where the player can release their block and match it to the grid. Otherwise the block will just fall to the ground."
 }
