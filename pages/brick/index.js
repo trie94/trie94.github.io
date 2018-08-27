@@ -26,7 +26,7 @@ class Brick extends React.Component {
                 <Summary content={content} />
                 <div className="main-content">
                     <p className="sub-titles">grab, match, and collaborate!</p>
-                    <p className="section-wrappers">{content.section1}</p>
+                    <p className="section-wrappers post">{content.section1}</p>
 
                     <div className="sections">
                         <p className="sub-titles">1. get colors (asymmetric role)</p>
@@ -34,18 +34,18 @@ class Brick extends React.Component {
                             <img className="content-img content-img-left" src={asym1} />
                             <img className="content-img content-img-right" src={asym2} />
                         </div>
-                        <p className="section-wrappers">{content.section2}</p>
+                        <p className="section-wrappers post">{content.section2}</p>
                         <p className="sub-titles">2. spawn wall</p>
                         <div className="content-img-wrapper">
                             <img className="content-img" src={spawn_wall} />
                         </div>
-                        <p className="section-wrappers">{content.section3}</p>
+                        <p className="section-wrappers post">{content.section3}</p>
                         <p className="sub-titles">3. grab a block and match it to grid</p>
-                        <div className="content-img-wrapper">
+                        <div className="content-img-wrapper post">
                             <img className="content-img content-img-left" src={grab1} />
                             <img className="content-img content-img-right" src={grab2} />
                         </div>
-                        <p className="section-wrappers">{content.section4}</p>
+                        <p className="section-wrappers post">{content.section4}</p>
                     </div>
                 </div>
             </div>
