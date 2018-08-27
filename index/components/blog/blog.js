@@ -26,7 +26,7 @@ class Blog extends React.Component {
                     </div>
                     <div className='blog2'>
                         <Thumb img={sandbox} hoverimg={sandbox_hover}
-                        link="/" title="SANDBOX"/>
+                        link="/" title="PLAYGROUND"/>
                     </div>
                     <div className='blog3'>
                         <Thumb img={pastwork} hoverimg={pastwork_hover}
