@@ -1,0 +1,16 @@
+{
+    "title": "TILT",
+    "link":"/tilt",
+    "src": "https://www.youtube.com/embed/QHMHPzehOLA?rel=0",
+    "summary": "Tilt is a chrome extension & website that helps people understand their bias by analyzing their media intake.",
+    "duration": "3 weeks",
+    "role": "Full-Stack web developer",
+    "platform": "Website",
+    "tool": "React, Webpack, and ChartJs",
+    "section1": "1. it monitors your news sources as you browse.",
+    "section2": "2. it analyzes those sources and generates a score with a weekly report.",
+    "section3": "3. the report contains your most read news topics and articles, and recommends complimentary reading to raise your score.",
+    "section4": "It shows a different report based on what you have read over the past week. Buttons on the top represents different media intake data set. The left letter on the button means the bias level of news source and the right one means the credibility level. For instance, C/H means you have read articles that are mostly centered with high credibility.",
+    "bias_spectrum": "bias spectrum: far left – left – mid left – center – mid right – right – far right",
+    "credibility_spectrum": "credibility spectrum: low - mid - high"
+}

@@ -83,5 +83,10 @@ module.exports = {
         // }),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
-    ].concat(htmlPlugins)
+    ].concat(htmlPlugins),
+    optimization:{
+        splitChunks:{
+            chunks: 'all'
+        }
+    }
 }
