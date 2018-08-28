@@ -1,7 +1,7 @@
 {
     "title": "TILT",
     "link":"/tilt",
-    "src": "https://www.youtube.com/embed/QHMHPzehOLA?rel=0",
+    "src": "https://www.youtube.com/embed/cXv0Z786wmE?rel=0",
     "summary": "Tilt is a chrome extension & website that helps people understand their bias by analyzing their media intake.",
     "duration": "3 weeks",
     "role": "Full-Stack web developer",
@@ -15,7 +15,7 @@
     "credibility_spectrum": "low - mid - high",
     "section5": "Our goal is to prove if it generates a valid score based on the user’s media intake data. Thus, we created a scoring system that compiles three metrics to generate a overall score – bias level, credibility level, and time spent on articles.",
     "section6": "In order to validate the scoring system, we need a different set of user media intake data. That is the part where a user profile generator is required which creates pseudo user data by receiving four properties.",
-    "bias_level": "average bias level of articles that a user has read during a week (Far left – left – mid left – center – mid right – right – far right)",
+    "bias_level": "average bias level of articles that a user has read during a week (far left – left – mid left – center – mid right – right – far right)",
     "credibility_level": "average credibility level of articles that a user has read during a week (low – mid – high)",
     "total_number": "of articles that a user read",
     "average_time": "for reading an article",

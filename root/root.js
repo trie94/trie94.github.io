@@ -30,6 +30,8 @@ class Root extends React.Component {
     }
 
     render() {
+        window.scrollTo(0, 0);
+        
         return (
             <Switch>
                 <Route exact path='/' component={Index} />

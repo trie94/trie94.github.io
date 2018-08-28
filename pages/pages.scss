@@ -15,7 +15,7 @@
 @media only screen and (max-width: 768px) {
     .work-content,
     .main-content {
-        padding: 2% 10% 0 10% !important;
+        padding: 5% 10% 0 10% !important;
     }
 
     .bullet-wrapper {
@@ -85,4 +85,8 @@
 .content-full-img-wrapper,
 .content-full-img {
     width: 100%;
+}
+
+.indent {
+    margin: 0 auto 5px 5%;
 }
