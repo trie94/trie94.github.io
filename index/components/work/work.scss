@@ -93,4 +93,12 @@
     opacity: 0;
     transition: .5s ease;
     background-color: #fff;
-  }
+
+    &-content {
+        position: absolute;
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
