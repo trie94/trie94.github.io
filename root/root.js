@@ -7,7 +7,7 @@ import Index from '../index';
 import Works from '../pages/works';
 import Brick from '../pages/brick';
 import Tilt from '../pages/tilt';
-import Frankenstein from '../pages/frankenstein';
+import Represent from '../pages/re-present';
 
 if (process.env.NODE_ENV !== 'production') { console.log("dev mode"); }
 
@@ -38,7 +38,7 @@ class Root extends React.Component {
                 <Route path ='/works' component={Works} />
                 <Route path='/brick' component={Brick} />
                 <Route path='/tilt' component={Tilt} />
-                <Route path='/frankenstein' component={Frankenstein} />
+                <Route path='/re-present' component={Represent} />
                 <Redirect to='/' />
             </Switch>
         )

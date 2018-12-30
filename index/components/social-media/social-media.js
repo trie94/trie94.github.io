@@ -14,7 +14,7 @@ class Social extends React.Component{
 
     render(){
         return(
-            <div className='row'>
+            <div className='row footer'>
             <Icon icon={faGithubAlt} link="https://github.com/trie94"/>
             <Icon icon={faLinkedin} link="https://www.linkedin.com/in/yein-jo/" />
             <Icon icon={faTwitter} link="https://twitter.com/157crush"/>

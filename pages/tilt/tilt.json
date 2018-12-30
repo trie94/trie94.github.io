@@ -1,5 +1,7 @@
 {
-    "title": "TILT",
+    "title":"TILT",
+    "thumb":"Media-Bias analyzing tool",
+    "tags":"React, WebPack, Chart Js",
     "link":"/tilt",
     "src": "https://www.youtube.com/embed/cXv0Z786wmE?rel=0",
     "summary": "Tilt is a chrome extension & website that helps people understand their bias by analyzing their media intake.",

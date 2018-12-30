@@ -1,17 +1,15 @@
 import React from 'react';
 import './about.scss';
 import about_content from './about.json';
-
-import door from '../../../assets/imgs/door.png';
-import light from '../../../assets/imgs/light-switch.png';
-import border from '../../../assets/imgs/border.png';
+import landing from './../../../assets/imgs/about/landing.png';
 
 class About extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             isLightOn: true,
-            backgroundColor: "transparent" };
+            backgroundColor: "transparent"
+        };
 
         this.content = about_content.intro;
 
@@ -19,8 +17,8 @@ class About extends React.Component {
         this.lightHandler = this.lightHandler.bind(this);
     }
 
-    lightHandler(){
-        this.setState({ isLightOn: !this.state.isLightOn }, ()=>
+    lightHandler() {
+        this.setState({ isLightOn: !this.state.isLightOn }, () =>
             this.setState({ backgroundColor: this.state.isLightOn ? "transparent" : "rgb(0,0,0,0.9)" }));
     }
 
@@ -28,15 +26,12 @@ class About extends React.Component {
         this.style = { backgroundColor: this.state.backgroundColor };
         return (
             <div className='about row' style={this.style}>
-                <div className='interaction'>
-                    <img className="switch-img" src={light} onClick={this.lightHandler}/>
-                    <img className="door-img" src={door}/>
-                </div>
-                {/* <div className='description'>
-                    {this.content}
-                </div> */}
-                <img className="row-line" src={border}/>
+                <div className='landing'>
+                </div >
+            <div className='description'>
+                {this.content}
             </div>
+            </div >
         )
     }
 }

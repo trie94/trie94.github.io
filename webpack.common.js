@@ -6,7 +6,7 @@ const glob = require('glob');
 
 console.log('globbing');
 let files = glob.sync('./pages/**/index.js');
-files = files.map(function(file) {
+files = files.map(function (file) {
     let name = file;
     name = name.replace('/index.js', '');
     name = name.replace('./pages/', '');
@@ -15,7 +15,7 @@ files = files.map(function(file) {
 });
 files.push('index.html');
 
-const htmlPlugins = files.map(function(file) {
+const htmlPlugins = files.map(function (file) {
     return new HtmlWebpackPlugin({
         title: 'Production',
         template: './root/root.html',
@@ -55,23 +55,15 @@ module.exports = {
         {
             test: /\.scss$/,
             use: [
-                    "style-loader",
-                    "css-loader",
-                    "sass-loader"
+                "style-loader",
+                "css-loader",
+                "sass-loader"
             ]
         },
         {
             test: /\.(png|jpg|gif|pdf|ico)$/,
-            use: [
-                {
-                    loader: 'file-loader',
-                    options: {
-                        name: '[path][name].[ext]'
-                    }
-                }
-            ]
-        }
-        ],
+            use: 'file-loader'
+        }]
     },
     plugins: [
         new CleanWebpackPlugin(['dist/*']),
@@ -84,8 +76,9 @@ module.exports = {
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ].concat(htmlPlugins),
-    optimization:{
-        splitChunks:{
+
+    optimization: {
+        splitChunks: {
             chunks: 'all'
         }
     }

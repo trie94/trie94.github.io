@@ -1,20 +1,23 @@
 html {
-    // font-family: "Source Sans Pro", sans-serif;
-    font-family: "Walter Turncoat", sans-serif; 
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
     margin: 0;
-    font-weight: 300;
-    background-image: url("../assets/imgs/texture.png");
-    background-repeat: repeat-y;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+.titles {
+    font-weight: 600;
+    margin: 3.6em auto 0 auto;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5% 15%;
+    padding: 3% 15%;
     position: relative;
     overflow: hidden;
 }
@@ -34,15 +37,6 @@ a:hover {
 
 a:active {
     color: #000;
-}
-
-.row-line {
-    margin: auto;
-    width: 100%;
-    height: 8px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .dashed-line {

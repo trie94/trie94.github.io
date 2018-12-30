@@ -18,21 +18,20 @@ class Blog extends React.Component {
     render() {
         return (
             <div className='blog'>
-                <p id="small-stuff">SMALL STUFF</p>
+                <p id="small-stuff" className="titles"> SMALL STUFF</p>
                 <div className='row blog'>
                     <div className='blog1'>
                         <Thumb img={sketchbook} hoverimg={sketchbook_hover}
-                        link ="https://www.instagram.com/crushed157/" title="SKETCHBOOK"/>
+                        link ="https://www.instagram.com/crushed157/" title="DRAWINGS"/>
                     </div>
                     <div className='blog2'>
                         <Thumb img={sandbox} hoverimg={sandbox_hover}
-                        link="/" title="PLAYGROUND"/>
+                        link="https://trie94.github.io/sketchbook" title="CODING SKETCHES"/>
                     </div>
                     <div className='blog3'>
                         <Thumb img={pastwork} hoverimg={pastwork_hover}
                         link="/" title="PAST WORK"/>
                     </div>
-                    <img className="row-line" src={border} />
                 </div>
             </div>
         )
