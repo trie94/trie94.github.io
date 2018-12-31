@@ -13,9 +13,6 @@ import grab1 from '../../assets/imgs/brick/grab1.gif';
 import grab2 from '../../assets/imgs/brick/grab2.gif';
 import networkTransform from '../../assets/imgs/brick/brick_network_transform.png';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-
 class Brick extends React.Component {
     constructor(props) {
         super(props);
@@ -23,12 +20,6 @@ class Brick extends React.Component {
     }
 
     render() {
-
-        String.prototype.replaceAll = function (search, replacement) {
-            var target = this;
-            return target.replace(new RegExp(search, 'g'), replacement);
-        };
-
         content.code1 = content.code1.replaceAll("\&hellip;", "\u2026");
         content.code2 = content.code2.replaceAll("\&hellip;", "\u2026");
         content.code3 = content.code3.replaceAll("\&hellip;", "\u2026");
@@ -38,13 +29,8 @@ class Brick extends React.Component {
                 <Header title={content.title} link={content.link} />
                 <Summary content={content} />
                 <div className="main-content">
-                    <div className="section-wrappers">
-                        <a href="https://github.com/trie94/Love-Brick" target="_blank">
-                            <FontAwesomeIcon icon={faGithubAlt} /> Github repo</a>
-                    </div>
                     <p className="sub-titles">Grab, Match, and Collaborate!</p>
                     <p className="section-wrappers post">{content.section1}</p>
-
                     <div className="sections">
                         <p className="sub-titles"> Block Interaction</p>
                         <div className="content-img-wrapper">

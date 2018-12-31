@@ -11,10 +11,6 @@ import system_architecture from '../../assets/imgs/tilt/system_architecture.png'
 import prototype_model from '../../assets/imgs/tilt/prototype_model.png';
 import scoring_system from '../../assets/imgs/tilt/scoring_system.png';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-import { faHandPointRight } from '@fortawesome/free-regular-svg-icons';
-
 class Tilt extends React.Component {
     constructor(props) {
         super(props);
@@ -27,12 +23,6 @@ class Tilt extends React.Component {
                 <Header title="TILT" link="/tilt" />
                 <Summary content={content} />
                 <div className="main-content">
-                <div className="section-wrappers">
-                <div><a href="http://tilt-static-web.s3-website-us-west-2.amazonaws.com/" target="_blank">
-                <FontAwesomeIcon icon={faHandPointRight}/> click to see the prototype</a></div>
-                <div><a href="https://github.com/trie94/rga-intern" target="_blank">
-                <FontAwesomeIcon icon={faGithubAlt}/> github repo is here</a></div>
-                </div>
                     <p className="sub-titles">key features</p>
                     <div className="section-wrappers post">
                         <p className="indent">{content.section1}</p>
@@ -46,7 +36,7 @@ class Tilt extends React.Component {
                         <p className="indent">&bull; Bias spectrum: {content.bias_spectrum}</p>
                         <p className="indent">&bull; Credibility spectrum: {content.credibility_spectrum}</p>
                     </div>
-                    
+
                     <p className="sub-titles">interaction model</p>
                     <div className="content-full-img-wrapper">
                         <img className="content-full-img" src={interaction_model} />
@@ -56,7 +46,7 @@ class Tilt extends React.Component {
                     <p className="sub-titles">scoring system</p>
                     <div className="content-full-img-wrapper">
                         <img className="content-full-img" src={scoring_system} />
-                    </div>                    
+                    </div>
                     <p className="section-wrappers post">{content.section6}</p>
                     <div className="section-wrappers post">
                         <p className="indent">1. Bias level: {content.bias_level}</p>
@@ -64,7 +54,7 @@ class Tilt extends React.Component {
                         <p className="indent">3. Total number {content.total_number}</p>
                         <p className="indent">4. Average time {content.average_time}</p>
                     </div>
-                    
+
                     <div className="content-full-img-wrapper">
                         <img className="content-full-img" src={prototype_model} />
                     </div>
@@ -74,7 +64,7 @@ class Tilt extends React.Component {
                     <div className="content-full-img-wrapper">
                         <img className="content-full-img" src={system_architecture} />
                     </div>
-                    <p className="section-wrappers"/>
+                    <p className="section-wrappers" />
 
                 </div>
             </div>
