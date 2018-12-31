@@ -1,5 +1,6 @@
 .work{
     margin: auto;
+    height: 100%;
 }
 
 @mixin size($width) {
@@ -42,6 +43,13 @@
         margin: 20px auto;
     }
 }
+
+// @if $browser === mozilla {
+//     //apply this CSS
+//    .pull-right.glyphicon.glyphicon-chevron-right {
+//     top: -13px;
+//     line-height: 0.5 !important;
+// }
 
 #work {
     text-align: center;
