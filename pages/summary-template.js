@@ -18,13 +18,16 @@ function RenderLinks(props) {
 }
 
 function GetLink(props) {
-    if (props.props.includes("git")) {
-        console.log(props.props);
+    let string = props.props;
+    let substring = "git";
+
+    if (string.indexOf(substring) !== -1) {
+        // console.log(props.props);
         return <a href={props.props} target="_blank">
             <FontAwesomeIcon icon={faGithubAlt} /> Github repo</a>;
     }
     else {
-        console.log(props.props);
+        // console.log(props.props);
         return <a href={props.props} target="_blank">
             <FontAwesomeIcon icon={faHandPointRight} /> Prototype</a>;
     }
