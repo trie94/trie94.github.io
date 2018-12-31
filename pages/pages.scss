@@ -1,13 +1,10 @@
 .post {
-    font-family: "Source Sans Pro", sans-serif !important;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.5em;
 }
 
 .work-content,
 .main-content {
-    // border: 2px gray dashed;
     padding: 2% 22% 0 22%;
     position: relative;
 }
@@ -78,8 +75,23 @@
     margin: 1% 0;
 }
 
-.section-wrappers{
-    padding-bottom: 5%;
+.section{
+    &-wrappers{
+        padding-bottom: 5%;
+    }
+    &-continue{
+        padding-bottom: 0%;
+    }
+    &-code{
+        background-color: rgb(245, 245, 245);
+
+        &-snippet{
+            word-wrap: normal;
+            overflow: auto;
+            display: block;
+            padding: 3% 5%;
+        }
+    }
 }
 
 .content-full-img-wrapper,

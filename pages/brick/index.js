@@ -6,11 +6,12 @@ import Header from '../../common/header/header';
 import Summary from '../summary-template';
 import content from './brick.json';
 
-import asym1 from '../../assets/imgs/brick/asymmetric1.jpg';
-import asym2 from '../../assets/imgs/brick/asymmetric2.jpg';
-import spawn_wall from '../../assets/imgs/brick/spawn_wall.gif';
+// import asym1 from '../../assets/imgs/brick/asymmetric1.jpg';
+// import asym2 from '../../assets/imgs/brick/asymmetric2.jpg';
+// import spawn_wall from '../../assets/imgs/brick/spawn_wall.gif';
 import grab1 from '../../assets/imgs/brick/grab1.gif';
 import grab2 from '../../assets/imgs/brick/grab2.gif';
+import networkTransform from '../../assets/imgs/brick/brick_network_transform.png';
 
 class Brick extends React.Component {
     constructor(props) {
@@ -20,32 +21,49 @@ class Brick extends React.Component {
 
     render() {
 
+        String.prototype.replaceAll = function(search, replacement) {
+            var target = this;
+            return target.replace(new RegExp(search, 'g'), replacement);
+        };
+
+        content.code1 = content.code1.replaceAll("\&hellip;", "\u2026");
+        content.code2 = content.code2.replaceAll("\&hellip;", "\u2026");
+        content.code3 = content.code3.replaceAll("\&hellip;", "\u2026");
+
         return (
             <div>
                 <Header title={content.title} link={content.link} />
                 <Summary content={content} />
                 <div className="main-content">
-                    <p className="sub-titles">grab, match, and collaborate!</p>
+                    <p className="sub-titles">Grab, Match, and Collaborate!</p>
                     <p className="section-wrappers post">{content.section1}</p>
 
                     <div className="sections">
-                        <p className="sub-titles">1. get colors (asymmetric role)</p>
+                        <p className="sub-titles"> Block Interaction</p>
                         <div className="content-img-wrapper">
-                            <img className="content-img content-img-left" src={asym1} />
-                            <img className="content-img content-img-right" src={asym2} />
-                        </div>
-                        <p className="section-wrappers post">{content.section2}</p>
-                        <p className="sub-titles">2. spawn wall</p>
-                        <div className="content-img-wrapper">
-                            <img className="content-img" src={spawn_wall} />
-                        </div>
-                        <p className="section-wrappers post">{content.section3}</p>
-                        <p className="sub-titles">3. grab a block and match it to grid</p>
-                        <div className="content-img-wrapper post">
                             <img className="content-img content-img-left" src={grab1} />
                             <img className="content-img content-img-right" src={grab2} />
                         </div>
+                        <p className="section-continue post">{content.section2}</p>
+                        <p className="section-continue post">{content.section3}</p>
                         <p className="section-wrappers post">{content.section4}</p>
+                        <p className="sub-titles"> Network Transform</p>
+                        <div className="content-full-img-wrapper">
+                            <img className="content-full-img" src={networkTransform} />
+                        </div>
+                        <p className="section-continue post">{content.section5}</p>
+                        <p className="section-continue post">{content.section6}</p>                        <div className="section-code">
+                            <pre><code className="section-code-snippet" spellCheck="false">{content.code1}
+                            </code></pre>
+                        </div>
+                        <div className="section-code">
+                            <pre><code className="section-code-snippet" spellCheck="false">{content.code2}
+                            </code></pre>
+                        </div>
+                        <div className="section-code">
+                            <pre><code className="section-code-snippet" spellCheck="false">{content.code3}
+                            </code></pre>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ class Summary extends React.Component {
         <div className='work-content'>
             <div className="work-title">{this.props.content.title}</div>
             <div className="video-wrapper">
-                <iframe className="work-video" src={this.props.content.src} /></div>
+                <iframe className="work-video" src={this.props.content.src} allowfullscreen="allowfullscreen" /></div>
             <div className="work-summary post">{this.props.content.summary}</div>
             <div className="bullet-wrapper post">
             <p className="bullets"><span className="bullet-titles">&bull; Duration:</span> {this.props.content.duration}</p>
