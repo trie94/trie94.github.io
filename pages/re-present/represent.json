@@ -11,8 +11,8 @@
     "role":"Lead Programmer",
     "platform":"Oculus Rift",
     "tool":"Unity, Oculus Rift & Touch controllers, Kinect, and Watson Speech to Text API",
-    "section1":"",
-    "section2":"",
+    "section1":"In order to enhance one's presentation skills, it is essential to iterate on a practice-review cycle. However, there are not enough resources that enables people to review their performances. To unclog this practice-review iteration cycle, this tool provides Practice mode, which generates a classroom space where people can practice their presentation with attentive audience; Summary, that visualizes performance results for each session; Review mode, that allows people to review their performance with a timeline tool that helps people  navigate between different moments. It also supports multi-session, which allows people to revisit the app to practice a new session or to review and compare their previous performances.",
+    "section2":"In order to better manage data, four types of data managers are used: Trackers, Analyzers, Reflectors, and Renderers.",
     "section3":"",
     "section4":""
 }
