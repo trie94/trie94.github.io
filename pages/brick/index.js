@@ -1,14 +1,13 @@
 import React from 'react';
 import '../pages.scss';
 import './brick.scss';
+import './../../common/components/prism/prism.css';
+import Prism from './../../common/components/prism/prism';
 
 import Header from '../../common/header/header';
 import Summary from '../summary-template';
 import content from './brick.json';
 
-// import asym1 from '../../assets/imgs/brick/asymmetric1.jpg';
-// import asym2 from '../../assets/imgs/brick/asymmetric2.jpg';
-// import spawn_wall from '../../assets/imgs/brick/spawn_wall.gif';
 import grab1 from '../../assets/imgs/brick/grab1.gif';
 import grab2 from '../../assets/imgs/brick/grab2.gif';
 import networkTransform from '../../assets/imgs/brick/brick_network_transform.png';
@@ -17,6 +16,11 @@ class Brick extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
+    }
+
+    componentDidMount()
+    {
+        Prism.highlightAll();
     }
 
     render() {
@@ -46,15 +50,16 @@ class Brick extends React.Component {
                         </div>
                         <p className="section-continue post">{content.section5}</p>
                         <p className="section-continue post">{content.section6}</p>                        <div className="section-code">
-                            <pre><code className="section-code-snippet" spellCheck="false">{content.code1}
+                            <pre><code className="language-clike section-code-snippet" spellCheck="false">
+                            {content.code1}
                             </code></pre>
                         </div>
                         <div className="section-code">
-                            <pre><code className="section-code-snippet" spellCheck="false">{content.code2}
+                            <pre><code className="language-clike section-code-snippet" spellCheck="false">{content.code2}
                             </code></pre>
                         </div>
                         <div className="section-code">
-                            <pre><code className="section-code-snippet" spellCheck="false">{content.code3}
+                            <pre><code className="language-clike section-code-snippet" spellCheck="false">{content.code3}
                             </code></pre>
                         </div>
                     </div>
