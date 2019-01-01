@@ -13,6 +13,11 @@
     "tool":"Unity, Oculus Rift & Touch controllers, Kinect, and Watson Speech to Text API",
     "section1":"In order to enhance one's presentation skills, it is essential to iterate on a practice-review cycle. However, there are not enough resources that enables people to review their performances. To unclog this practice-review iteration cycle, this tool provides Practice mode, which generates a classroom space where people can practice their presentation with attentive audience; Summary, that visualizes performance results for each session; Review mode, that allows people to review their performance with a timeline tool that helps people  navigate between different moments. It also supports multi-session, which allows people to revisit the app to practice a new session or to review and compare their previous performances.",
     "section2":"In order to better manage data, four types of data managers are used: Trackers, Analyzers, Reflectors, and Renderers.",
-    "section3":"",
-    "section4":""
+    "section3":"Trackers record data from the Practice mode and save it locally as a csv file format. Data sets include head orientation, body gesture/ posture, voice, pdf slide page index, and audience engagement level data. Following figure shows tracker-data pairs:",
+    "section4":"Once the Trackers save the collected raw data locally, the Analyzers load it and make an analysis in order to generate Summary. The analyzed data is also stored to the local disk. Following image is one of the examples how the raw data is analyzed. Watson Speech to Text API is used for analyzing the audio data.",
+    "section5":"Renderers load the processed data and render it to the Summary page. Summary page is rendered after each practice session, which is shown in VR. PC version Summary can be found in the previous session list page which helps users choose one of the sessions to review. Following example is a Summary page that can be found in the session list.",
+    "section6":"Reflectors manage play-back in the Review mode. They read through csv files (that are saved by the Trackers) line-by-line for every frame.",
+    "section7":"Since the system will be used multiple times by multiple users, session data is stored in the session date directory under the user name.",
+    "section8":"In order to provide better experience in the Review mode, a tool that enables users to navigate between different moments is needed.",
+    "section9":""
 }
