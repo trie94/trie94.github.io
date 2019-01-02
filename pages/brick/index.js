@@ -18,8 +18,7 @@ class Brick extends React.Component {
         this.state = {};
     }
 
-    componentDidMount()
-    {
+    componentDidMount() {
         Prism.highlightAll();
     }
 
@@ -27,7 +26,7 @@ class Brick extends React.Component {
         content.code1 = content.code1.replaceAll("\&hellip;", "\u2026");
         content.code2 = content.code2.replaceAll("\&hellip;", "\u2026");
         content.code3 = content.code3.replaceAll("\&hellip;", "\u2026");
-
+        
         return (
             <div>
                 <Header title={content.title} link={content.link} />

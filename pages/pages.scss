@@ -73,6 +73,13 @@
     color: rgba(0,0,0,0.5);
     font-weight: bold;
     margin: 1% 0;
+    &-sub{
+        font-size: 18px;
+        font-style: italic;
+        font-weight: bold;
+        color: rgba(0,0,0,0.4);
+        margin: 3% 0 1% 0;
+    }
 }
 
 .section{
