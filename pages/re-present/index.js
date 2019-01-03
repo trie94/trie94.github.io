@@ -53,39 +53,38 @@ class Represent extends React.Component {
                     <p className="sub-titles">Interaction &amp; Interface in Review Mode</p>
                     <img className="content-full-img" src={timeline} />
                     <p className="section-wrappers post">{content.section9}</p>
-                    <p className="sub-titles-sub">Timeline Interaction</p>
+                    <p className="sub-titles-sub">Timeline Shader for Interaction</p>
                     <img className="content-full-img" src={timeline_shader} />
                     <p className="section-wrappers-continue post">{content.section10} Details about the Reflectors can be found in the <a href="/re-present/#data-flow">Data Flow</a> section.</p>
                     <div className="section-code">
                         <pre><code className="language-clike section-code-snippet" spellCheck="false">{content.code1}
                         </code></pre>
                     </div>
-                    <br />
                     <p className="section-wrappers-continue post">{content.section11}</p>
                     <div className="section-code">
                         <pre><code className="language-clike section-code-snippet" spellCheck="false">{content.code2}
                         </code></pre>
                     </div>
-                    <br />
                     <p className="section-wrappers-continue post">{content.section12}</p>
                     <div className="section-code">
                         <pre><code className="language-clike section-code-snippet" spellCheck="false">{content.code3}
                         </code></pre>
                     </div>
-                    <br />
                     <p className="section-wrappers-continue post">{content.section14}</p>
                     <div className="section-code">
                         <pre><code className="language-clike section-code-snippet" spellCheck="false">{content.code4}
                         </code></pre>
                     </div>< br />
 
-                    <p className="sub-titles-sub">Timeline  Interaction Progress</p>
+                    <p className="sub-titles-sub">Timeline Interaction Progress</p>
                     <img className="content-full-img" src={timeline_progress1} />
                     <p className="section-wrappers post">{content.section15}</p>
                     <img className="content-full-img" src={rim_hand} />
                     <img className="content-full-img" src={controller} />
-                    <p className="section-wrappers post">{content.section16}</p>
-                    <img className="content-full-img" src={timeline_progress3} />
+                    <p className="section-wrappers-continue post">{content.section16}</p>
+                    <div className="content-img-wrapper">
+                        <img className="content-img-75center" src={timeline_progress3} />
+                    </div>
                     <p className="section-wrappers post">{content.section17}</p>
                     <img className="content-full-img" src={timeline_progress4} />
                     <img className="content-full-img" src={timeline_progress5} />

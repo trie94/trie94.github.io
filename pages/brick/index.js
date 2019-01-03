@@ -26,7 +26,7 @@ class Brick extends React.Component {
         content.code1 = content.code1.replaceAll("\&hellip;", "\u2026");
         content.code2 = content.code2.replaceAll("\&hellip;", "\u2026");
         content.code3 = content.code3.replaceAll("\&hellip;", "\u2026");
-        
+
         return (
             <div>
                 <Header title={content.title} link={content.link} />
@@ -50,7 +50,7 @@ class Brick extends React.Component {
                         <p className="section-continue post">{content.section5}</p>
                         <p className="section-continue post">{content.section6}</p>                        <div className="section-code">
                             <pre><code className="language-clike section-code-snippet" spellCheck="false">
-                            {content.code1}
+                                {content.code1}
                             </code></pre>
                         </div>
                         <div className="section-code">

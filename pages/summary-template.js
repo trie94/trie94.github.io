@@ -33,6 +33,10 @@ function GetLink(props) {
     }
 }
 
+function GetPrototype(props){
+    
+}
+
 class Summary extends React.Component {
     constructor(props) {
         super(props);
