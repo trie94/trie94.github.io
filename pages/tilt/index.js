@@ -23,14 +23,14 @@ class Tilt extends React.Component {
                 <Header title="TILT" link="/tilt" />
                 <Summary content={content} />
                 <div className="main-content">
-                    <p className="sub-titles">key features</p>
+                    <p className="sub-titles">Idea Concept</p>
                     <div className="section-wrappers post">
                         <p className="indent">{content.section1}</p>
                         <p className="indent">{content.section2}</p>
                         <p className="indent">{content.section3}</p>
                     </div>
 
-                    <p className="sub-titles">how prototype works</p>
+                    <p className="sub-titles">Proof of Concept</p>
                     <p className="section-wrappers post">{content.section4}</p>
                     <div className="section-wrappers post">
                         <p className="indent">&bull; Bias spectrum: {content.bias_spectrum}</p>
