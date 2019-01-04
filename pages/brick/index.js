@@ -16,6 +16,7 @@ class Brick extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
+        this.prototypeName = "Game";
     }
 
     componentDidMount() {
@@ -30,7 +31,7 @@ class Brick extends React.Component {
         return (
             <div>
                 <Header title={content.title} link={content.link} />
-                <Summary content={content} prototype={content.src}/>
+                <Summary content={content} prototype={content.src} prototypeName={this.prototypeName}/>
                 <div className="main-content">
                     <p className="sub-titles">Grab, Match, and Collaborate!</p>
                     <p className="section-wrappers post">{content.section1}</p>

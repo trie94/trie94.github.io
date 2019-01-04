@@ -11,10 +11,32 @@ String.prototype.replaceAll = function (search, replacement) {
 function RenderLinks(props) {
     const hasLink = (props.props) ? true : false;
 
+    let prototypeName = (props.prototypeName === undefined || props.prototypeName === null) ?
+        prototypeName = "Prototype" : props.prototypeName;
+
+
+
     if (hasLink)
-        return <GetLink props={props.props} />;
+        return <GetLink props={props.props} name={prototypeName}/>;
 
     return null;
+}
+
+function GetLink(props) {
+    let string = props.props;
+    const substring = "git";
+    let title = title;
+    let name = ' ' + props.name;
+
+    if (string.indexOf(substring) !== -1) {
+        return <a href={props.props} target="_blank">
+            <FontAwesomeIcon icon={faGithubAlt} /> GitHub Repo</a>;
+    }
+    else {
+        return <a href={props.props} target="_blank">
+            <FontAwesomeIcon icon={faHandPointRight} /> 
+            {name}</a>;
+    }
 }
 
 function RenderPrototype(props) {
@@ -32,29 +54,13 @@ function RenderPrototype(props) {
     }
 }
 
-function GetLink(props) {
-    let string = props.props;
-    const substring = "git";
-
-    if (string.indexOf(substring) !== -1) {
-        // console.log(props.props);
-        return <a href={props.props} target="_blank">
-            <FontAwesomeIcon icon={faGithubAlt} /> Github repo</a>;
-    }
-    else {
-        // console.log(props.props);
-        return <a href={props.props} target="_blank">
-            <FontAwesomeIcon icon={faHandPointRight} /> Prototype</a>;
-    }
-}
-
 class Summary extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
     }
-
     render() {
+
         return (
             <div className='work-content'>
                 <div className="work-title">{this.props.content.title}</div>
@@ -68,7 +74,7 @@ class Summary extends React.Component {
                 </div>
                 <RenderLinks props={this.props.content.repo} />
                 <br />
-                <RenderLinks props={this.props.content.prototype} />
+                <RenderLinks props={this.props.content.prototype} prototypeName={this.props.prototypeName}/>
             </div>
         )
     }
