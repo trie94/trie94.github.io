@@ -28,7 +28,7 @@ class Tilt extends React.Component {
         return (
             <div>
                 <Header title="TILT" link="/tilt" />
-                <Summary content={content} />
+                <Summary content={content} prototype={tilt_prototype}/>
                 <div className="main-content">
                     <p className="sub-titles">Idea Concept</p>
                     <div className="section-wrappers post">

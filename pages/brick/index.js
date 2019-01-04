@@ -30,7 +30,7 @@ class Brick extends React.Component {
         return (
             <div>
                 <Header title={content.title} link={content.link} />
-                <Summary content={content} />
+                <Summary content={content} prototype={content.src}/>
                 <div className="main-content">
                     <p className="sub-titles">Grab, Match, and Collaborate!</p>
                     <p className="section-wrappers post">{content.section1}</p>

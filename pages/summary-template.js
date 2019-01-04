@@ -17,9 +17,24 @@ function RenderLinks(props) {
     return null;
 }
 
+function RenderPrototype(props) {
+    let proto = props.props;
+
+    if (proto === null || proto === undefined)
+        return null;
+
+    if (proto.indexOf("gif") !== -1) {
+        return <img className="content-full-img" src={props.props} />
+    }
+    else {
+        return <div className="video-wrapper">
+        <iframe className="work-video" src={props.props} allowFullScreen="allowFullScreen" /></div>
+    }
+}
+
 function GetLink(props) {
     let string = props.props;
-    let substring = "git";
+    const substring = "git";
 
     if (string.indexOf(substring) !== -1) {
         // console.log(props.props);
@@ -33,10 +48,6 @@ function GetLink(props) {
     }
 }
 
-function GetPrototype(props){
-    
-}
-
 class Summary extends React.Component {
     constructor(props) {
         super(props);
@@ -47,8 +58,7 @@ class Summary extends React.Component {
         return (
             <div className='work-content'>
                 <div className="work-title">{this.props.content.title}</div>
-                <div className="video-wrapper">
-                    <iframe className="work-video" src={this.props.content.src} allowFullScreen="allowFullScreen" /></div>
+                <RenderPrototype props={this.props.prototype}/>
                 <div className="work-summary post">{this.props.content.summary}</div>
                 <div className="bullet-wrapper post">
                     <p className="bullets"><span className="bullet-titles">&bull; Duration:</span> {this.props.content.duration}</p>

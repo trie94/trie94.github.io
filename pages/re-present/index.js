@@ -42,7 +42,7 @@ class Represent extends React.Component {
         return (
             <div>
                 <Header title={content.title} link={content.link} />
-                <Summary content={content} />
+                <Summary content={content} prototype={content.src}/>
                 <div className="main-content">
                     <p className="sub-titles">Practice-Review Iteration Cycle</p>
                     <img className="content-full-img" src={experience_flow} />
