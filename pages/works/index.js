@@ -1,11 +1,13 @@
 import React from 'react';
 import './works.scss';
 import Header from '../../common/header/header';
+import PrjectList from '../project-list-template';
 
 class Works extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.proj1 = "project1";
+        this.proj2 = "project2";
     }
 
     render() {
@@ -15,6 +17,8 @@ class Works extends React.Component {
                 <Header title="WORKS" link="/works" />
                 <div className='works'>
                 project list
+                <PrjectList name={this.proj1}/>
+                <PrjectList name={this.proj2}/>
                 </div>
             </div>
         )

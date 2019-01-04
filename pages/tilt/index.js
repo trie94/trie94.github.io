@@ -55,7 +55,7 @@ class Tilt extends React.Component {
                     <img className="content-full-img" src={prototype_model} />
 
                     <p className="sub-titles-sub">User Profile Generating System</p>
-                    <p className="section-wrappers post">{content.section5}</p>
+                    <p className="section-wrappers-continue post">{content.section5}</p>
                     <div className="section-code">
                         <pre><code className="language-javascript section-code-snippet" spellCheck="false">{content.code1}
                         </code></pre>
