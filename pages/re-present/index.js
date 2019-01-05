@@ -42,7 +42,7 @@ class Represent extends React.Component {
         return (
             <div>
                 <Header title={content.title} link={content.link} />
-                <Summary content={content} prototype={content.src}/>
+                <Summary content={content} prototype={content.src} />
                 <div className="main-content">
                     <p className="sub-titles">Practice-Review Iteration Cycle</p>
                     <img className="content-full-img" src={experience_flow} />
@@ -79,14 +79,12 @@ class Represent extends React.Component {
                     <p className="sub-titles-sub">Timeline Interaction Progress</p>
                     <img className="content-full-img" src={timeline_progress1} />
                     <p className="section-wrappers post">{content.section15}</p>
-                    <img className="content-full-img" src={rim_hand} />
+                    <img className="content-full-img" src={rim_hand} /><br />
                     <img className="content-full-img" src={controller} />
                     <p className="section-wrappers-continue post">{content.section16}</p>
-                    <div className="content-img-wrapper">
-                        <img className="content-img-75center" src={timeline_progress3} />
-                    </div>
+                    <img className="content-full-img" src={timeline_progress3} />
                     <p className="section-wrappers post">{content.section17}</p>
-                    <img className="content-full-img" src={timeline_progress4} />
+                    {/* <img className="content-full-img" src={timeline_progress4} /><br /> */}
                     <img className="content-full-img" src={timeline_progress5} />
                     <p className="section-wrappers post">{content.section18}</p>
 

@@ -102,19 +102,17 @@
 }
 
 .content-full-img{
-    width: 100%;
+    max-width:100%;
+    height: auto;
+    margin: auto;
+    display: block;
     &-wrapper{
         position: relative;
     }
 }
 
-.content-img-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .content-img {
-    width: 40%;
+    max-width: 40%;
     margin: auto;
     align-self: center;
     padding: 3% 5%;
@@ -131,6 +129,11 @@
         width: 75%;
         height: 75%;
         margin: auto;
+    }
+
+    &-wrapper{
+        display: flex;
+        flex-wrap: wrap; 
     }
 }
 

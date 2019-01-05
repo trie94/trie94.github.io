@@ -8,8 +8,9 @@ import Header from '../../common/header/header';
 import Summary from '../summary-template';
 import content from './brick.json';
 
-import grab1 from '../../assets/imgs/brick/grab1.gif';
-import grab2 from '../../assets/imgs/brick/grab2.gif';
+import grab from '../../assets/imgs/brick/grab.gif';
+import release from '../../assets/imgs/brick/release.gif';
+
 import networkTransform from '../../assets/imgs/brick/brick_network_transform.png';
 
 class Brick extends React.Component {
@@ -31,23 +32,21 @@ class Brick extends React.Component {
         return (
             <div>
                 <Header title={content.title} link={content.link} />
-                <Summary content={content} prototype={content.src} prototypeName={this.prototypeName}/>
+                <Summary content={content} prototype={content.src} prototypeName={this.prototypeName} />
                 <div className="main-content">
                     <p className="sub-titles">Grab, Match, and Collaborate!</p>
                     <p className="section-wrappers post">{content.section1}</p>
                     <div className="sections">
                         <p className="sub-titles"> Block Interaction</p>
                         <div className="content-img-wrapper">
-                            <img className="content-img content-img-left" src={grab1} />
-                            <img className="content-img content-img-right" src={grab2} />
+                            <img className="content-img content-img-left" src={grab} />
+                            <img className="content-img content-img-right" src={release} />
                         </div>
                         <p className="section-continue post">{content.section2}</p>
                         <p className="section-continue post">{content.section3}</p>
                         <p className="section-wrappers post">{content.section4}</p>
                         <p className="sub-titles"> Network Transform</p>
-                        <div className="content-full-img-wrapper">
-                            <img className="content-full-img" src={networkTransform} />
-                        </div>
+                        <img className="content-full-img" src={networkTransform} />
                         <p className="section-continue post">{content.section5}</p>
                         <p className="section-continue post">{content.section6}</p>                        <div className="section-code">
                             <pre><code className="language-clike section-code-snippet" spellCheck="false">
