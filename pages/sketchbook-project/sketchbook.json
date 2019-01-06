@@ -1,0 +1,14 @@
+{
+    "title":"Sketchbook Project",
+    "thumb":"A sketchbook for various coding sketches",
+    "tags":"WebGL, Three Js, WebPack, Web dev",
+    "link":"/sketchbook",
+    "repo":"https://github.com/trie94/sktechbook",
+    "prototype":"https://trie94.github.io/sketchbook",
+    "src":"./../assets/imgs/sketchbook/rest-your-mind.gif",
+    "summary":"Sketchbook is a personal project that is for creating simple coding sketches",
+    "duration": "on going project",
+    "role": "Full-Stack web developer",
+    "platform": "Website",
+    "tool": "Three Js and WebPack"
+}

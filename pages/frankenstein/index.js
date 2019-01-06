@@ -1,5 +1,4 @@
 import React from 'react';
-import './frankenstein.scss';
 import Header from '../../common/header/header';
 
 class Frankenstein extends React.Component {

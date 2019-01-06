@@ -1,6 +1,5 @@
 import React from 'react';
 import '../pages.scss';
-import './represent.scss';
 
 import Header from '../../common/header/header';
 import Summary from '../summary-template';

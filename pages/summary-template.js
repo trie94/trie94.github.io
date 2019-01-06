@@ -1,66 +1,19 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-import { faHandPointRight } from '@fortawesome/free-regular-svg-icons';
+import RenderLinks from './../common/common-functions/RenderLinks';
+import RenderPrototype from './../common/common-functions/RenderPrototype';
 
 String.prototype.replaceAll = function (search, replacement) {
     var target = this;
     return target.replace(new RegExp(search, 'g'), replacement);
 };
 
-function RenderLinks(props) {
-    const hasLink = (props.props) ? true : false;
-
-    let prototypeName = (props.prototypeName === undefined || props.prototypeName === null) ?
-        prototypeName = "Prototype" : props.prototypeName;
-
-
-
-    if (hasLink)
-        return <GetLink props={props.props} name={prototypeName}/>;
-
-    return null;
-}
-
-function GetLink(props) {
-    let string = props.props;
-    const substring = "git";
-    let title = title;
-    let name = ' ' + props.name;
-
-    if (string.indexOf(substring) !== -1) {
-        return <a href={props.props} target="_blank">
-            <FontAwesomeIcon icon={faGithubAlt} /> GitHub Repo</a>;
-    }
-    else {
-        return <a href={props.props} target="_blank">
-            <FontAwesomeIcon icon={faHandPointRight} /> 
-            {name}</a>;
-    }
-}
-
-function RenderPrototype(props) {
-    let proto = props.props;
-
-    if (proto === null || proto === undefined)
-        return null;
-
-    if (proto.indexOf("gif") !== -1) {
-        return <img className="content-full-img" src={props.props} />
-    }
-    else {
-        return <div className="video-wrapper">
-        <iframe className="work-video" src={props.props} allowFullScreen="allowFullScreen" /></div>
-    }
-}
-
 class Summary extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
     }
-    render() {
 
+    render() {
         return (
             <div className='work-content'>
                 <div className="work-title">{this.props.content.title}</div>
