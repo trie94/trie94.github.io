@@ -7,7 +7,8 @@ export default function RenderPrototype(props) {
         return null;
 
     if (proto.indexOf("gif" || "png" || "jpg" || "jpeg") !== -1) {
-        return <img className="content-full-img" src={props.props} />
+        return <div className="content-full-img-wrapper"><p></p><img className="content-full-img" src={props.props} />
+        </div>
     }
     else {
         return <div className="video-wrapper">

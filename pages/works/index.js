@@ -9,7 +9,7 @@ import tilt_content from './../tilt/tilt.json';
 import frankenstein_content from './../frankenstein/frankenstein.json';
 import sketchbook_content from './../sketchbook-project/sketchbook.json';
 
-import sketchbook_src from './../../assets/imgs/sketchbook/rest-your-mind.gif';
+import sketchbook_src from './../../assets/imgs/sketchbook/sketchbook.gif';
 
 class Works extends React.Component {
     constructor(props) {
