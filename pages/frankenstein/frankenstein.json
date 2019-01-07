@@ -1,8 +1,9 @@
 {
-    "title":"FRANKENSTEIN",
-    "link":"/frankenstein",
+    "title":"Frankenstein",
     "src": "https://www.youtube.com/embed/qYqZobOj4S0?rel=0",
-    "summary": "Frankenstein is a VR experience that allows guests experience through the rejections that Frankenstein’s monster faced and understand how he became a true monster.",
+    "prototype":"https://www.etc.cmu.edu/projects/frankenstein/",
+    "summary": "Frankenstein is a VR experience that allows guests experience through the rejections that Frankenstein’s monster faced and understand how he became a true monster. The entire experience was housed in the Posner Center at Carnegie Mellon University from May to December 2018.",
+    "list_summary":"Frankenstein was a semester-long project at the Entertainment Technology Center, Carnegie Mellon University. I was a game-play designer/ programmer in a seven-member team. I mainly worked on implementing user-friendly VR interactions for naive players. I also helped with visual design by creating a logo, a banner, illustrations, and physical instructions for the installation at the Posner center.",
     "duration": "15 weeks",
     "role": "Programmer",
     "platform": "Oculus Rift & Touch",

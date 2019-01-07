@@ -1,5 +1,5 @@
 {
-    "title": "BRICK",
+    "title": "Brick",
     "thumb":"Collaborative multi-player mobile AR game",
     "tags":"Mobile AR, Multi-player, Google AR Core, Cloud Anchor",
     "link":"/brick",
@@ -7,6 +7,7 @@
     "prototype":"",
     "src": "https://www.youtube.com/embed/fcfsEmWFOis?rel=0",
     "summary": "Brick is a collaborative game in which two players work together to fill in a pattern of empty slots in a grid, using virtual blocks that are scattered all over the room.",
+    "list_summary":"I worked with as a solo programmer in a four-member team with UX researchers and designers. I implemented multiple interactions and networked two mobile devices using Google's AR Core and Cloud Anchor API in order to achieve a multi-player experience.",
     "duration": "15 weeks",
     "role": "Programmer",
     "platform": "Mobile devices that support Google AR Core",

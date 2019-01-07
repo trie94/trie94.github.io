@@ -25,7 +25,8 @@ class Works extends React.Component {
                 <PrjectList content={brick_content}/>
                 <PrjectList content={represent_content}/>
                 <PrjectList content={tilt_content}/>
-                <PrjectList content={frankenstein_content}/>
+                <PrjectList content={frankenstein_content}
+                prototypeName="Project website"/>
                 <PrjectList content={sketchbook_content} prototypeName="Sketchbook"/>
                 </div>
             </div>
