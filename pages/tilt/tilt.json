@@ -7,7 +7,7 @@
     "prototype":"http://tilt-static-web.s3-website-us-west-2.amazonaws.com/",
     "src": "https://www.youtube.com/embed/cXv0Z786wmE?rel=0",
     "summary": "Tilt is a chrome extension & website that helps people understand their bias by analyzing their media intake.",
-    "list_summary": "I worked as a solo programmer in an intern project at R/GA Portland. I was involved in a creative process for discussing ideas; implemented a proof of concept prototype by creating a static website with WebPack and React.",
+    "list_summary": "I worked as a solo programmer in an intern project at R/GA Portland. I was involved in a creative process for discussing ideas; implemented a proof of concept prototype by creating a static website with WebPack and React. Click for more information!",
     "duration": "3 weeks",
     "role": "Full-Stack web developer",
     "platform": "Website",

@@ -7,7 +7,7 @@
     "prototype":"https://www.etc.cmu.edu/projects/re-present/",
     "src": "https://www.youtube.com/embed/pJbNACveJJ0?rel=0",
     "summary":"Re-Present is a VR app that helps people enhance their public speaking skills by providing features where they can practice and review their performance.",
-    "list_summary":"Re-Present was a semester-long project at the Entertainment Technology Center, Carnegie Mellon University. As a lead programmer in a five-member team, I implemented a play-back feature in the Review mode along with interactions of the Timeline that enables users to navigate between different moments; created a modular system that is capable of collecting and compiling voice, proxy eye contact, and body gestural/ postural data that can be extended to other data sets; made entry-points to interaction designers/ prototypers to test their interaction design.",
+    "list_summary":"Re-Present was a semester-long project at the Entertainment Technology Center, Carnegie Mellon University. As a lead programmer in a five-member team, I implemented a play-back feature in the Review mode along with interactions of the Timeline that enables users to navigate between different moments; created a modular system that is capable of collecting and compiling voice, proxy eye contact, and body gestural/ postural data that can be extended to other data sets; made entry-points to interaction designers/ prototypers to test their interaction design. Click here to see more!",
     "duration":"15 weeks",
     "role":"Lead Programmer",
     "platform":"Oculus Rift",
