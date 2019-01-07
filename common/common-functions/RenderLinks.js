@@ -8,8 +8,6 @@ export default function RenderLinks(props) {
     let prototypeName = (props.prototypeName === undefined || props.prototypeName === null) ?
         prototypeName = "Prototype" : props.prototypeName;
 
-
-
     if (hasLink)
         return <GetLink props={props.props} name={prototypeName} />;
 

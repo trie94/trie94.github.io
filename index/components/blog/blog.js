@@ -28,7 +28,7 @@ class Blog extends React.Component {
                     </div>
                     <div className='blog3'>
                         <Thumb img={pastwork} hoverimg={pastwork_hover}
-                        link="/" title="PAST WORK"/>
+                        link="/past-work" title="PAST WORK"/>
                     </div>
                 </div>
             </div>
