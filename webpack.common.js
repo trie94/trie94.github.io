@@ -28,6 +28,11 @@ for (var i = 0; i < files.length; i++) {
     console.log(files[i]);
 }
 
+let pathToClean = ['dist'];
+let cleanOptions = {
+    exclude: ['CNAME']
+}
+
 module.exports = {
     entry: ['./root/root.js'],
     output: {
@@ -73,7 +78,7 @@ module.exports = {
         }]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist/*']),
+        new CleanWebpackPlugin(pathToClean, cleanOptions),
         // new HtmlWebpackPlugin({
         //     title: 'Production',
         //     template: './root/root.html',
