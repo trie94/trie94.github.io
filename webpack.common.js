@@ -28,7 +28,7 @@ for (var i = 0; i < files.length; i++) {
     console.log(files[i]);
 }
 
-let pathToClean = ['dist'];
+let pathToClean = ['dist/*'];
 let cleanOptions = {
     exclude: ['CNAME']
 }
