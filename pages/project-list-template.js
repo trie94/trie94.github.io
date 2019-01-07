@@ -7,7 +7,6 @@ import RenderTitle from './../common/common-functions/RenderTitle';
 class ProjectList extends React.Component {
     constructor(props) {
         super(props);
-        
     }
 
     render() {
