@@ -24,11 +24,12 @@
     }
 
     .thumb-text {
-        position: absolute;
-        left: 50%;
+        // position: relative;
+        text-align: center;
+        // left: 50%;
         bottom: -3%;
-        transform: translate(-50%, 0%);
-        white-space: nowrap;
+        // transform: translate(-50%, 0%);
+        // white-space: nowrap;
         margin: auto auto auto 0;
     }
 }
