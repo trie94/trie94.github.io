@@ -1,5 +1,5 @@
 import React from 'react';
-import './blog.scss';
+import './stuff.scss';
 import sketchbook from '../../../assets/imgs/thumbnails/sketchbook.png';
 import sketchbook_hover from '../../../assets/imgs/thumbnails/sketchbook_hover.png';
 import sandbox from '../../../assets/imgs/thumbnails/sandbox.png';
@@ -7,7 +7,7 @@ import sandbox_hover from '../../../assets/imgs/thumbnails/sandbox_hover.png';
 import pastwork from '../../../assets/imgs/thumbnails/pastwork.png';
 import pastwork_hover from '../../../assets/imgs/thumbnails/pastwork_hover.png';
 
-class Blog extends React.Component {
+class Stuff extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -71,4 +71,4 @@ class Thumb extends React.Component {
     }
 }
 
-export default Blog;
+export default Stuff;

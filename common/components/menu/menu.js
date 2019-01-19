@@ -12,7 +12,6 @@ class MenuButton extends React.Component {
     }
 }
 
-
 class Menu extends React.Component {
     constructor(props) {
         super(props);
@@ -24,7 +23,7 @@ class Menu extends React.Component {
             <div className="menu-list">
                 <div className="menu-item"><a href="/">HOME</a></div>
                 <div className="menu-item"><a href="/works">WORK</a></div>
-                <div className="menu-item"><a href="/#small-stuff">STUFF</a></div>
+                <div className="menu-item"><a href="https://trie94.github.io/sketchbook" target="_blank">SKETCHBOOK</a></div>
                 <div className="menu-item"><a href={resume} target="_blank">CV</a></div>
             </div>
         )
