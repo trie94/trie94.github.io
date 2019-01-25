@@ -2,11 +2,6 @@ import React from 'react';
 import RenderLinks from './../common/common-functions/RenderLinks';
 import RenderPrototype from './../common/common-functions/RenderPrototype';
 
-String.prototype.replaceAll = function (search, replacement) {
-    var target = this;
-    return target.replace(new RegExp(search, 'g'), replacement);
-};
-
 class Summary extends React.Component {
     constructor(props) {
         super(props);
@@ -14,6 +9,7 @@ class Summary extends React.Component {
     }
 
     render() {
+        console.log(this.props.content.blog);
         return (
             <div className='work-content'>
                 <div className="work-title">{this.props.content.title}</div>
@@ -26,6 +22,8 @@ class Summary extends React.Component {
                     <p className="bullets"><span className="bullet-titles">&bull; Tool:</span> {this.props.content.tool}</p>
                 </div>
                 <RenderLinks props={this.props.content.repo} />
+                <br />
+                <RenderLinks props={this.props.content.blog}/>
                 <br />
                 <RenderLinks props={this.props.content.prototype} prototypeName={this.props.prototypeName}/>
             </div>

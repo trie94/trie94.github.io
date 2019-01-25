@@ -17,6 +17,7 @@ class ProjectList extends React.Component {
                 <RenderLinks props={this.props.content.repo} />
                 <RenderLinks props={this.props.content.twitter} prototypeName="Twitter Thread" />
                 <RenderLinks props={this.props.content.prototype} prototypeName={this.props.prototypeName} />
+                <RenderLinks props={this.props.content.blog} />
                 <RenderPrototype props={this.props.content.src} />
                 <RenderListSummary props={this.props.content} />
             </div>

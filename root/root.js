@@ -10,6 +10,8 @@ import Tilt from '../pages/tilt';
 import Represent from '../pages/re-present';
 import PastWork from '../pages/past-work';
 
+import BrickDevBlog from '../pages/brick-dev-blog';
+
 if (process.env.NODE_ENV !== 'production') { console.log("dev mode"); }
 
 if (module.hot) {
@@ -24,6 +26,11 @@ if (module.hot) {
     enableProdMode();
 }
 
+String.prototype.replaceAll = function (search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
+
 class Root extends React.Component {
     constructor(props) {
         super(props);
@@ -32,11 +39,12 @@ class Root extends React.Component {
 
     render() {
         window.scrollTo(0, 0);
-        
+
         return (
             <Switch>
                 <Route exact path='/' component={Index} />
                 <Route path ='/works' component={Works} />
+                <Route path='/brick/dev-blog' component={BrickDevBlog} />
                 <Route path='/brick' component={Brick} />
                 <Route path='/tilt' component={Tilt} />
                 <Route path='/re-present' component={Represent} />
