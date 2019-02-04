@@ -9,7 +9,7 @@ class Summary extends React.Component {
     }
 
     render() {
-        console.log(this.props.content.blog);
+        // console.log(this.props.content);
         return (
             <div className='work-content'>
                 <div className="work-title">{this.props.content.title}</div>
@@ -23,7 +23,7 @@ class Summary extends React.Component {
                 </div>
                 <RenderLinks props={this.props.content.repo} />
                 <br />
-                <RenderLinks props={this.props.content.blog}/>
+                <RenderLinks props={this.props.content.blog} prototypeName={"Dev Blog"}/>
                 <br />
                 <RenderLinks props={this.props.content.prototype} prototypeName={this.props.prototypeName}/>
             </div>
