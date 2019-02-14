@@ -35,7 +35,7 @@ class Brick extends React.Component {
 
                 <div className="main-content">
 
-                    <p className="section-italic section-wrappers post">Brick is conditionally accepted for 2019 CHI Games and Play</p>
+                    <p className="section-italic section-wrappers post">Brick has been accepted for 2019 CHI Games and Play</p>
 
                     <p className="sub-titles">Grab, Match, and Collaborate!</p>
                     <p className="section-wrappers post">{content.section1}</p>
