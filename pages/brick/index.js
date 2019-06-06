@@ -10,6 +10,10 @@ import content from './brick.json';
 import grab from '../../assets/imgs/brick/grab.gif';
 import release from '../../assets/imgs/brick/release.gif';
 
+import combined from '../../assets/imgs/brick/combined_block.png';
+import combined_gif from '../../assets/imgs/brick/combined_block_interaction.gif'
+import combined_gif2 from '../../assets/imgs/brick/combined_block_interaction2.gif'
+
 import networkTransform from '../../assets/imgs/brick/brick_network_transform.png';
 
 class Brick extends React.Component {
@@ -40,7 +44,7 @@ class Brick extends React.Component {
                     <p className="sub-titles">Grab, Match, and Collaborate!</p>
                     <p className="section-wrappers post">{content.section1}</p>
                     <div className="sections">
-                        <p className="sub-titles"> Block Interaction</p>
+                        <p className="sub-titles">Block Interaction</p>
                         <div className="content-img-wrapper">
                             <img className="content-img content-img-left" src={grab} />
                             <img className="content-img content-img-right" src={release} />
@@ -48,7 +52,14 @@ class Brick extends React.Component {
                         <p className="section-continue post">{content.section2}</p>
                         <p className="section-continue post">{content.section3}</p>
                         <p className="section-wrappers post">{content.section4}</p>
-                        <p className="sub-titles"> Network Transform</p>
+                        <p className="sub-titles">Combined Block Interaction</p>
+                        <div className="content-img-wrapper">
+                            <img className="content-full-img" src={combined} />
+                            <img className="content-img content-img-left" src={combined_gif} />
+                            <img className="content-img content-img-right" src={combined_gif2} />
+                        </div>
+                        <p className="section-wrappers post">{content.section7}</p>
+                        <p className="sub-titles">Network Transform</p>
                         <img className="content-full-img" src={networkTransform} />
                         <p className="section-continue post">{content.section5}</p>
                         <p className="section-continue post">{content.section6}</p>                        <div className="section-code">
