@@ -1,0 +1,21 @@
+{
+    "title": "ARpet",
+    "thumb":"Mobile AR pet experience",
+    "tags":"Mobile AR, Virtual Pet Experience, Merge cube, Vuforia",
+    "link":"/arpet",
+    "repo":"https://github.com/trie94/arpet",
+    "prototype":"",
+    "twitter":"",
+    "src": "https://www.youtube.com/embed/8RtyYMxYrdM?rel=0",
+    "summary": "ARpet is a virtual pet experience where a user interacts with Blobby, who came from another planet.",
+    "list_summary":"Working with a programmer and a 3D artist, I worked as a 2D artist and a programmer, creating concept art, designing characters and environment, texturing assets, and implementing voice interaction. It was a proof-of-concept project to achieve basic interaction with our virtual character, Blobby. Click here to see more about our development story!",
+    "duration": "15 weeks",
+    "role": "2D Artist & Programmer",
+    "platform": "iOS/ Android devices (Cross platform)",
+    "tool": "Unity, Merge Cube, Vuforia",
+    "section1": "In order to achieve a feeling where the virtual character shares the same space with the user, our team used Merge Cube.",
+    "section2": "The main design goal was to enable users to build emotional attachment towards the character. To achieve this, I designed a character that has a friendly look; created a simple voice interaction with emotional feedback from the character.",
+    "section3": "A user can initiate a conversation just by speaking at the house.  Blobby finds the user and moves towards the room where the user is looking at and listening to the user. Once the user finishes talking, Blobby replies. When the conversation ends, Blobby goes back to the idle mode where he randomly walks around the house.",
+    "section4": "Blobby reacts to the user with four different emotions: neutral, happy, sad, and angry. I made a simple animation system for the facial expression.",
+    "section5": "One of the learning goals for this project was converting 2D art to 3D. To achieve this, we created our own shaders to fake lights and shadows. We first tried out unlit shaders and fake all the lighting only with textures. However, as we add day-night cycle, it was hard to fake the entire lighting system just with textures. Eventually we used lit shaders with textures that have fake lights and shadows. For this part, I worked on texturing, and my co-programmer did shader programming."
+}

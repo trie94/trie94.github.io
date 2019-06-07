@@ -38,9 +38,7 @@ class Brick extends React.Component {
                 <Summary content={content} prototype={content.src} prototypeName={this.prototypeName} />
 
                 <div className="main-content">
-
                     <p className="section-italic section-wrappers post">Brick has been accepted for 2019 CHI Games and Play</p>
-
                     <p className="sub-titles">Grab, Match, and Collaborate!</p>
                     <p className="section-wrappers post">{content.section1}</p>
                     <div className="sections">

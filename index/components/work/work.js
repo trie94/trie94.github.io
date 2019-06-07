@@ -5,11 +5,13 @@ import { Link } from "react-router-dom";
 import arrow from '../../../assets/imgs/arrow.png';
 
 import brick_thumb from '../../../assets/imgs/thumbnails/brick_thumb.png';
-import tilt_thumb from '../../../assets/imgs/thumbnails/tilt_thumb.png';
+// import tilt_thumb from '../../../assets/imgs/thumbnails/tilt_thumb.png';
+import arpet_thumb from '../../../assets/imgs/thumbnails/arpet_thumb.png';
 import represnet_thumb from '../../../assets/imgs/thumbnails/re-present_thumb.png';
 
 import brick_content from '../../../pages/brick/brick.json';
-import tilt_content from '../../../pages/tilt/tilt.json';
+// import tilt_content from '../../../pages/tilt/tilt.json';
+import arpet_content from '../../../pages/arpet/arpet.json';
 import represent_content from '../../../pages/re-present/represent.json';
 
 class Work extends React.Component {
@@ -56,16 +58,16 @@ class Work extends React.Component {
                     </div>
 
                     <div className='dev3'>
-                        <Link to="/tilt">
-                            <img className="thumb-img" src={tilt_thumb} />
+                        <Link to="/arpet">
+                            <img className="thumb-img" src={arpet_thumb} />
                             <div className="overlay">
                                 <div className="overlay-content">
                                     <p className="overlay-content-title">
-                                        {tilt_content.title}</p>
+                                        {arpet_content.title}</p>
                                     <p className="overlay-content-summary">
-                                        {tilt_content.thumb}</p>
+                                        {arpet_content.thumb}</p>
                                     <p className="overlay-content-tags">
-                                        {tilt_content.tags}</p>
+                                        {arpet_content.tags}</p>
                                 </div>
                             </div>
                         </Link>

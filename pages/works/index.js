@@ -4,6 +4,7 @@ import './../pages.scss';
 import Header from '../../common/header/header';
 import PrjectList from '../project-list-template';
 import brick_content from './../brick/brick.json';
+import arpet_content from './../arpet/arpet.json';
 import represent_content from './../re-present/represent.json';
 import tilt_content from './../tilt/tilt.json';
 import frankenstein_content from './../frankenstein/frankenstein.json';
@@ -24,6 +25,7 @@ class Works extends React.Component {
                 <div className='works'>
                 <PrjectList content={brick_content}/>
                 <PrjectList content={represent_content} prototypeName="Project Website"/>
+                <PrjectList content={arpet_content}/>
                 <PrjectList content={tilt_content}/>
                 <PrjectList content={sketchbook_content} prototypeName="Sketchbook"/>
                 <PrjectList content={frankenstein_content}

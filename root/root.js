@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Index from '../index';
 import Works from '../pages/works';
 import Brick from '../pages/brick';
+import Arpet from '../pages/arpet';
 import Tilt from '../pages/tilt';
 import Represent from '../pages/re-present';
 import PastWork from '../pages/past-work';
@@ -46,6 +47,7 @@ class Root extends React.Component {
                 <Route path ='/works' component={Works} />
                 <Route path='/brick/dev-blog' component={BrickDevBlog} />
                 <Route path='/brick' component={Brick} />
+                <Route path='/arpet' component={Arpet} />
                 <Route path='/tilt' component={Tilt} />
                 <Route path='/re-present' component={Represent} />
                 <Route path='/past-work' component={PastWork} />
