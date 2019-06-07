@@ -3,10 +3,11 @@ import React from 'react';
 export default function RenderPrototype(props) {
     let proto = props.props;
 
-    if (proto === null || proto === undefined)
+    if (proto === null || proto === undefined) {
         return null;
+    }
 
-    if (proto.indexOf("gif" || "png" || "jpg" || "jpeg") !== -1) {
+    if (proto.includes("gif") || proto.includes("png") || proto.includes("jpg") || proto.includes("jpeg")) {
         return <div className="content-full-img-wrapper"><p></p><img className="content-full-img" src={props.props} />
         </div>
     }

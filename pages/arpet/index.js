@@ -1,16 +1,13 @@
 import React from 'react';
-import '../pages.scss';
-import Prism from './../../common/components/prism/prism';
 
 import Header from '../../common/header/header';
 import Summary from '../summary-template';
 import content from './arpet.json';
 
 import merge from '../../assets/imgs/arpet/merge.png';
-import blobby from '../../assets/imgs/arpet/blobby_t.jpg';
+// import blobby from '../../assets/imgs/arpet/blobby_t.jpg';
 import bed_day from '../../assets/imgs/arpet/bedroom.png';
 import bed_night from '../../assets/imgs/arpet/bedroom_night.png';
-import tv from '../../assets/imgs/arpet/tv.png';
 import v1 from '../../assets/imgs/arpet/visual1.png';
 import v2 from '../../assets/imgs/arpet/visual2.png';
 import v3 from '../../assets/imgs/arpet/visual3.png';
