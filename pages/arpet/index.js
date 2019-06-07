@@ -42,8 +42,14 @@ class Arpet extends React.Component {
                     <img className="content-img content-img-right" src={bed_night} />
                     {/* <img className="content-full-img" src={exterior} /> */}
                     <p className="sub-titles">Voice Interaction</p>
+                    <div className="video-wrapper">
+                        <iframe className="work-video" src={"https://www.youtube.com/embed/qOgb616LmBc?rel=0"} allowFullScreen="allowFullScreen" />
+                    </div>
                     <p className="section-wrappers post">{content.section3}</p>
                     <p className="sub-titles">Emotional Feedback from Blobby</p>
+                    <div className="video-wrapper">
+                        <iframe className="work-video" src={"https://www.youtube.com/embed/jm8gNUt0wwQ?rel=0"} allowFullScreen="allowFullScreen" />
+                    </div>
                     <p className="section-wrappers post">{content.section4}</p>
                     <p className="sub-titles">Visuals</p>
                     <img className="content-img content-img-left" src={v4} />
