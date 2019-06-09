@@ -22,9 +22,9 @@ class Summary extends React.Component {
                     <p className="bullets"><span className="bullet-titles">&bull; Tool:</span> {this.props.content.tool}</p>
                 </div>
                 <RenderLinks props={this.props.content.repo} />
-                <br />
+                {/* <br /> */}
                 <RenderLinks props={this.props.content.blog} prototypeName={"Dev Blog"}/>
-                <br />
+                {/* <br /> */}
                 <RenderLinks props={this.props.content.prototype} prototypeName={this.props.prototypeName}/>
             </div>
         )
