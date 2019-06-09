@@ -18,7 +18,7 @@ class Social extends React.Component{
             <Icon icon={faGithubAlt} link="https://github.com/trie94"/>
             <Icon icon={faLinkedin} link="https://www.linkedin.com/in/yein-jo/" />
             <Icon icon={faTwitter} link="https://twitter.com/157crush"/>
-            <Icon icon={faEnvelope} link="mailto:yeinj@andrew.cmu.edu"/>
+            <Icon icon={faEnvelope} link="mailto:trie60@gmail.com"/>
             </div>
         )
     }
