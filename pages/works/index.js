@@ -23,10 +23,10 @@ class Works extends React.Component {
             <div>
                 <Header title="WORKS" link="/works" />
                 <div className='works'>
-                <ProjectList content={brick_content}/>
-                <ProjectList content={represent_content} prototypeName="Project Website"/>
                 <ProjectList content={arpet_content}/>
+                <ProjectList content={brick_content}/>
                 <ProjectList content={sketchbook_content} prototypeName="Sketchbook"/>
+                <ProjectList content={represent_content} prototypeName="Project Website"/>
                 <ProjectList content={tilt_content}/>
                 <ProjectList content={frankenstein_content}
                 prototypeName="Project Website"/>
