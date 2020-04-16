@@ -5,6 +5,7 @@ import Header from '../../common/header/header';
 import ProjectList from '../project-list-template';
 import brick_content from './../brick/brick.json';
 import arpet_content from './../arpet/arpet.json';
+import cell_content from './../keep-me-alive/keep-me-alive.json';
 import represent_content from './../re-present/represent.json';
 import tilt_content from './../tilt/tilt.json';
 import frankenstein_content from './../frankenstein/frankenstein.json';
@@ -23,6 +24,7 @@ class Works extends React.Component {
             <div>
                 <Header title="WORKS" link="/works" />
                 <div className='works'>
+                <ProjectList content={cell_content}/>
                 <ProjectList content={arpet_content}/>
                 <ProjectList content={brick_content}/>
                 <ProjectList content={sketchbook_content} prototypeName="Sketchbook"/>

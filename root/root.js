@@ -7,6 +7,7 @@ import Index from '../index';
 import Works from '../pages/works';
 import Brick from '../pages/brick';
 import Arpet from '../pages/arpet';
+import KeepMeAlive from '../pages/keep-me-alive';
 import Tilt from '../pages/tilt';
 import Represent from '../pages/re-present';
 import PastWork from '../pages/past-work';
@@ -48,6 +49,7 @@ class Root extends React.Component {
                 <Route path='/brick/dev-blog' component={BrickDevBlog} />
                 <Route path='/brick' component={Brick} />
                 <Route path='/arpet' component={Arpet} />
+                <Route path='/keep-me-alive' component={KeepMeAlive} />
                 <Route path='/tilt' component={Tilt} />
                 <Route path='/re-present' component={Represent} />
                 <Route path='/past-work' component={PastWork} />
