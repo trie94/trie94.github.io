@@ -34,10 +34,8 @@ class Arpet extends React.Component {
                     </p>
                     <p className="sub-titles">Design</p>
                     <p className="section-wrappers post">{content.section2}</p>
-                    {/* <img className="content-full-img" src={blobby} /> */}
-                    <img className="content-img content-img-left" src={bed_day} />
-                    <img className="content-img content-img-right" src={bed_night} />
-                    {/* <img className="content-full-img" src={exterior} /> */}
+                    <img className="content-img" src={bed_day} />
+                    <img className="content-img" src={bed_night} />
                     <p className="sub-titles">Voice Interaction</p>
                     <div className="video-wrapper">
                         <iframe className="work-video" src={"https://www.youtube.com/embed/qOgb616LmBc?rel=0"} allowFullScreen="allowFullScreen" />
@@ -49,10 +47,10 @@ class Arpet extends React.Component {
                     </div>
                     <p className="section-wrappers post">{content.section4}</p>
                     <p className="sub-titles">Visuals</p>
-                    <img className="content-img content-img-left" src={v4} />
-                    <img className="content-img content-img-right" src={v2} />
-                    <img className="content-img content-img-left" src={v1} />
-                    <img className="content-img content-img-right" src={v3} />
+                    <img className="content-img" src={v4} />
+                    <img className="content-img" src={v2} />
+                    <img className="content-img" src={v1} />
+                    <img className="content-img" src={v3} />
                     <p className="section-wrappers post">{content.section5}</p>
                 </div>
             </div>

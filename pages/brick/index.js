@@ -44,17 +44,19 @@ class Brick extends React.Component {
                     <div className="sections">
                         <p className="sub-titles">Block Interaction</p>
                         <div className="content-img-wrapper">
-                            <img className="content-img content-img-left" src={grab} />
-                            <img className="content-img content-img-right" src={release} />
+                            <img className="content-img" src={grab} />
+                            <img className="content-img" src={release} />
                         </div>
                         <p className="section-continue post">{content.section2}</p>
                         <p className="section-continue post">{content.section3}</p>
                         <p className="section-wrappers post">{content.section4}</p>
                         <p className="sub-titles">Combined Block Interaction</p>
-                        <div className="content-img-wrapper">
+                        {/* <div className="content-img-wrapper">
                             <img className="content-full-img" src={combined} />
-                            <img className="content-img content-img-left" src={combined_gif} />
-                            <img className="content-img content-img-right" src={combined_gif2} />
+                        </div> */}
+                        <div className="content-img-wrapper">
+                            <img className="content-img" src={combined_gif} />
+                            <img className="content-img" src={combined_gif2} />
                         </div>
                         <p className="section-wrappers post">{content.section7}</p>
                         <p className="sub-titles">Network Transform</p>

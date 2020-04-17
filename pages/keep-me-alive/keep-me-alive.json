@@ -12,9 +12,9 @@
     "role": "Gameplay programmer and Technical artist",
     "platform": "Mobile (iOS and Android)",
     "tool": "Unity",
-    "section1": "",
-    "section2": "",
-    "section3": "",
+    "section1": "A movement system for game AI characters is developed mainly for configurability and flexibility. Each movement is configured as a scriptable object that calculates velocity for one specific behavior. With this, composite behavior determines the final velocity by combining all of the velocity values multiplying by their defined weights. This system makes adding and removing sub-behaviors and adjusting weight values very handy.",
+    "section2": "This system also enables game characters to have multiple behavior configurations that can be changed based on their states.",
+    "section3": "To make the visual not too busy and blend it to environment, a simple toon shader with fog has been applied to the cells. Also, smear effect based on its velocity is applied to the cells for organic movement.",
     "section4": "",
     "section5": ""
 }
