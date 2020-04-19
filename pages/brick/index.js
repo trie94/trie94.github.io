@@ -51,9 +51,6 @@ class Brick extends React.Component {
                         <p className="section-continue post">{content.section3}</p>
                         <p className="section-wrappers post">{content.section4}</p>
                         <p className="sub-titles">Combined Block Interaction</p>
-                        {/* <div className="content-img-wrapper">
-                            <img className="content-full-img" src={combined} />
-                        </div> */}
                         <div className="content-img-wrapper">
                             <img className="content-img" src={combined_gif} />
                             <img className="content-img" src={combined_gif2} />

@@ -6,11 +6,17 @@ import content from './keep-me-alive.json';
 
 import composite from '../../assets/imgs/keep-me-alive/composites.png'
 import behavior_composite from '../../assets/imgs/keep-me-alive/behaviors-with-composite.png'
-import cells from '../../assets/imgs/keep-me-alive/cells.png'
 import erythrocyte from '../../assets/imgs/keep-me-alive/erythrocyte.png'
 import leukocyte from '../../assets/imgs/keep-me-alive/leukocyte.png'
 import platelet from '../../assets/imgs/keep-me-alive/platelet.png'
 import oxygen from '../../assets/imgs/keep-me-alive/oxygen.png'
+import node_path from '../../assets/imgs/keep-me-alive/node-path.png'
+import nodes from '../../assets/imgs/keep-me-alive/nodes.png'
+import segments from '../../assets/imgs/keep-me-alive/segments.png'
+import path_first from '../../assets/imgs/keep-me-alive/path-first.png'
+import path_second from '../../assets/imgs/keep-me-alive/path-second.png'
+import path_third from '../../assets/imgs/keep-me-alive/path-third.png'
+import path_fourth from '../../assets/imgs/keep-me-alive/path-fourth.png'
 
 class KeepMeAlive extends React.Component {
     constructor(props) {
@@ -36,8 +42,23 @@ class KeepMeAlive extends React.Component {
                         <img className="content-img-nomargin" src={leukocyte} />
                         <img className="content-img-nomargin" src={platelet} />
                         <img className="content-img-nomargin" src={oxygen} />
-                        </div>
+                    </div>
                     <p className="section-wrappers post">{content.section3}</p>
+                    <p className="sub-titles">Blood Vessels</p>
+                    <p className="section-continue post">{content.section4}</p>
+                    <img className="content-full-img" src={node_path} />
+                    <img className="content-img" src={nodes} />
+                    <img className="content-img" src={segments} />
+                    <p className="section-continue post">{content.section5}</p>
+                    <p className="section-continue post">{content.section6}</p>
+                    <img className="content-full-img" src={path_first} />
+                    <p className="section-continue post">{content.section7}</p>
+                    <img className="content-full-img" src={path_second} />
+                    <p className="section-continue post">{content.section8}</p>
+                    <img className="content-full-img" src={path_third} />
+                    <p className="section-continue post">{content.section9}</p>
+                    <img className="content-full-img" src={path_fourth} />
+                    <p className="section-wrappers post"></p>
                 </div>
             </div>
         )

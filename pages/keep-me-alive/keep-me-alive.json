@@ -15,6 +15,11 @@
     "section1": "A movement system for game AI characters is developed mainly for configurability and flexibility. Each movement is configured as a scriptable object that calculates velocity for one specific behavior. With this, composite behavior determines the final velocity by combining all of the velocity values multiplying by their defined weights. This system makes adding and removing sub-behaviors and adjusting weight values very handy.",
     "section2": "This system also enables game characters to have multiple behavior configurations that can be changed based on their states.",
     "section3": "To make the visual not too busy and blend it to environment, a simple toon shader with fog has been applied to the cells. Also, smear effect based on its velocity is applied to the cells for organic movement.",
-    "section4": "",
-    "section5": ""
+    "section4": "In order to build blood vessels, there were two things to consider: one was building a path system and the other was how to render the path.",
+    "section5": "Firstly, a node based path system has implemented. Here, the concept of direction is also added to the system, since blood only flows in one direction. This is achieved by building segments with start and end nodes. This system enables the game AI characters to follow the path by computing the current segment and next segments. Also, the nodes and segments can be customized in the editor, such that it can be used for building different paths.",
+    "section6": "However, there was a bigger challenge when it comes to rendering. Dynamic path system means, the path can't be pre-modeled and renders based on the nodes and segments. How can I achieve dynamic rendering?",
+    "section7": "Vessels are tubes. That being said, we can draw a sphere where a node sits, and draw a cylinder that connects two nodes. This looks perfect when we look at it from the outside. However, the cells and the player is looking at the vessels from the inside, which means, the overlapping parts will be blocking the view.",
+    "section8": "To solve this, distance functions are used to compute overlapping areas and discard pixels accordingly.",
+    "section9": "Finally fog and pulse have applied to polish the visual.",
+    "section10": ""
 }
