@@ -47,10 +47,14 @@ class Arpet extends React.Component {
                     </div>
                     <p className="section-wrappers post">{content.section4}</p>
                     <p className="sub-titles">Visuals</p>
-                    <img className="content-img" src={v4} />
-                    <img className="content-img" src={v2} />
-                    <img className="content-img" src={v1} />
-                    <img className="content-img" src={v3} />
+                    <div className="content-img-wrapper">
+                        <img className="content-img" src={v4} />
+                        <img className="content-img" src={v2} />
+                    </div>
+                    <div className="content-img-wrapper">
+                        <img className="content-img" src={v1} />
+                        <img className="content-img" src={v3} />
+                    </div>
                     <p className="section-wrappers post">{content.section5}</p>
                 </div>
             </div>

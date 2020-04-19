@@ -117,24 +117,17 @@
 
 .content-img {
     max-width: 50%;
-    margin: auto;
-    align-self: center;
+    margin: 0;
 
     &-75center{
         width: 75%;
         height: 75%;
     }
-
-    &-nomargin{
-        margin: 1%;
-        max-width: 45%;
-        height: auto;
-    }
-
     &-wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 }
 

@@ -38,10 +38,12 @@ class KeepMeAlive extends React.Component {
                     <p className="section-wrappers post">{content.section2}</p>
                     <p className="sub-titles">Cell Shaders</p>
                     <div className="content-img-wrapper">
-                        <img className="content-img-nomargin" src={erythrocyte} />
-                        <img className="content-img-nomargin" src={leukocyte} />
-                        <img className="content-img-nomargin" src={platelet} />
-                        <img className="content-img-nomargin" src={oxygen} />
+                        <img className="content-img" src={erythrocyte} />
+                        <img className="content-img" src={leukocyte} />
+                    </div>
+                    <div className="content-img-wrapper">
+                        <img className="content-img" src={platelet} />
+                        <img className="content-img" src={oxygen} />
                     </div>
                     <p className="section-wrappers post">{content.section3}</p>
                     <p className="sub-titles">Blood Vessels</p>
